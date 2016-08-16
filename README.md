@@ -24,20 +24,22 @@ Z for removing rules/options (more loose)
 
   2. Keep the `^` in the `package.json` for `eslint-config-foray1010`, if the project is still in development. Replace the `^` with `~` if you want to prevent new rules which may brother you in travis.
 
-  3. Create a `.eslintrc` in the project root
+  3. Create a `.eslintrc.yml` in the project root
 
-    ```json
-    {
-      "extends": "foray1010"
-    }
+    ```yml
+    extends: "foray1010"
     ```
 
-    If your repo is a front-end project using babel.js, you should extends `foray1010/react` instead
+    If your repo is a front-end project using [babel](https://babeljs.io/), you should extends `foray1010/react` instead
 
-    ```json
-    {
-      "extends": "foray1010/react"
-    }
+    ```yml
+    extends: "foray1010/react"
+    ```
+
+    We also support [vue](https://github.com/vuejs/vue)
+
+    ```yml
+    extends: "foray1010/vue"
     ```
 
   4. Add it to `npm test` so that  `travis` can test it for us, for example:
@@ -46,7 +48,7 @@ Z for removing rules/options (more loose)
     ```json
     {
       "scripts": {
-        "test": "grunt lint"
+        "lint": "eslint --ext .js,.jsx,.vue ."
       }
     }
     ```
@@ -54,21 +56,18 @@ Z for removing rules/options (more loose)
     `travis.yml`:
     ```yml
     install:
-      - npm install -g grunt-cli
       - npm install
     script:
-      - npm test
+      - npm run lint
     ```
 
 ### on your editor:
 1. If the repository doesn't have `eslint` installed, you can install it as global package
   - `npm install -g eslint-config-foray1010`
-  - Create a `.eslintrc` in `$HOME`
+  - Create a `.eslintrc.yml` in `$HOME`
 
-    ```json
-    {
-      "extends": "foray1010"
-    }
+    ```yml
+    extends: "foray1010"
     ```
 
 2. For `Atom`:
