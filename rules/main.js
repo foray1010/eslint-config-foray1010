@@ -79,6 +79,8 @@ module.exports = {
     'generator-star-spacing': [2, 'after'],
     'object-shorthand': 0,
     'prefer-template': 0,
+    // need to use generator function in koa even if we don't use yield
+    'require-yield': 0,
 
     /*+++++++++
      + Legacy +
