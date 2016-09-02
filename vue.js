@@ -7,6 +7,7 @@ module.exports = extendConfig({
     'eslint-config-foray1010/react'
   ],
   settings: {
+    'import/extensions': ['.js', '.vue'],
     react: {
       pragma: 'h'
     }
