@@ -18,6 +18,10 @@ module.exports = extendConfig({
     }
   },
   rules: {
+    // this two doesn't work in vue
+    'import/no-named-as-default': 0,
+    'import/no-named-as-default-member': 0,
+
     'react/jsx-filename-extension': [2, {
       extensions: ['.jsx', '.vue']
     }],
