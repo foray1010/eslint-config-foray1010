@@ -5,96 +5,89 @@ module.exports = {
     // force use `window.` prefix
     browser: false
   },
-  plugins: [
-    'html'
-  ],
-  settings: {
-    'html/indent': '0',
-    'html/report-bad-indent': 2
-  },
   rules: {
     /*++++++++++++++++++
      + Possible Errors +
      ++++++++++++++++++*/
-    'comma-dangle': [2, 'never'],
-    'no-extra-boolean-cast': 2,
-    'no-unexpected-multiline': 2,
+    'comma-dangle': ['error', 'never'],
+    'no-extra-boolean-cast': 'error',
+    'no-unexpected-multiline': 'error',
 
     /*+++++++++++++++++
      + Best Practices +
      +++++++++++++++++*/
-    'dot-location': [2, 'property'],
-    'no-alert': 0,
-    'no-else-return': 0,
-    'no-implicit-coercion': 2,
-    'no-loop-func': 0,
-    'no-new': 0,
-    'no-param-reassign': 0,
-    'no-script-url': 0,
-    'no-unused-expressions': 0,
-    'no-useless-call': 2,
-    'no-void': 2,
-    'wrap-iife': 0,
+    'dot-location': ['error', 'property'],
+    'no-alert': 'off',
+    'no-else-return': 'off',
+    'no-implicit-coercion': 'error',
+    'no-loop-func': 'off',
+    'no-new': 'off',
+    'no-param-reassign': 'off',
+    'no-script-url': 'off',
+    'no-unused-expressions': 'off',
+    'no-useless-call': 'error',
+    'no-void': 'error',
+    'wrap-iife': 'off',
 
     /*++++++++++++
      + Variables +
      ++++++++++++*/
-    'no-shadow': [2, {
+    'no-shadow': ['error', {
       builtinGlobals: true
     }],
-    'no-unused-vars': [1, {
+    'no-unused-vars': ['warn', {
       args: 'after-used',
       vars: 'local'
     }],
-    'no-use-before-define': 0,
+    'no-use-before-define': 'off',
 
     /*++++++++++
      + Node.js +
      ++++++++++*/
-    'no-mixed-requires': [2, true],
-    'no-new-require': 2,
-    'no-path-concat': 2,
-    'no-process-exit': 2,
+    'no-mixed-requires': ['error', true],
+    'no-new-require': 'error',
+    'no-path-concat': 'error',
+    'no-process-exit': 'error',
 
     /*+++++++++++++++++++
      + Stylistic Issues +
      +++++++++++++++++++*/
-    'func-names': 0,
-    'new-cap': [2, {
+    'func-names': 'off',
+    'new-cap': ['error', {
       capIsNew: false
     }],
-    'new-parens': 2,
-    'no-underscore-dangle': 0,
-    'no-unneeded-ternary': 2,
-    'object-curly-spacing': [2, 'never'],
-    'operator-assignment': [2, 'always'],
-    'operator-linebreak': [2, 'after'],
-    semi: [2, 'never'],
+    'new-parens': 'error',
+    'no-underscore-dangle': 'off',
+    'no-unneeded-ternary': 'error',
+    'object-curly-spacing': ['error', 'never'],
+    'operator-assignment': ['error', 'always'],
+    'operator-linebreak': ['error', 'after'],
+    semi: ['error', 'never'],
 
     /*+++++++++++++++
      + ECMAScript 6 +
      +++++++++++++++*/
-    'arrow-body-style': 0,
-    'constructor-super': 2,
-    'generator-star-spacing': [2, 'after'],
-    'object-shorthand': 0,
-    'prefer-template': 0,
+    'arrow-body-style': 'off',
+    'constructor-super': 'error',
+    'generator-star-spacing': ['error', 'after'],
+    'object-shorthand': 'off',
+    'prefer-template': 'off',
     // need to use generator function in koa even if we don't use yield
-    'require-yield': 0,
+    'require-yield': 'off',
 
     /*+++++++++
      + Legacy +
      +++++++++*/
-    'max-len': [2, 100, 2, {
+    'max-len': ['error', 100, 2, {
       ignoreUrls: true,
       ignoreComments: true
     }],
-    'no-bitwise': 2,
-    'no-plusplus': 2,
+    'no-bitwise': 'error',
+    'no-plusplus': 'error',
 
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
-    'import/no-extraneous-dependencies': 0
+    'import/no-extraneous-dependencies': 'off'
   }
 }
