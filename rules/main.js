@@ -57,6 +57,11 @@ module.exports = {
       capIsNew: false
     }],
     'new-parens': 'error',
+    'no-continue': 'off',
+    'no-lonely-if': 'off',
+    'no-mixed-operators': ['error', {
+      allowSamePrecedence: true
+    }],
     'no-underscore-dangle': 'off',
     'no-unneeded-ternary': 'error',
     'object-curly-spacing': ['error', 'never'],
