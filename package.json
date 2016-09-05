@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-foray1010",
   "description": "my own ESLint config",
-  "version": "3.2.5",
+  "version": "3.3.0",
   "homepage": "https://github.com/foray1010/eslint-config-foray1010",
   "author": {
     "name": "foray1010"
