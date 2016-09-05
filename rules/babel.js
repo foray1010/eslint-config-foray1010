@@ -2,7 +2,7 @@
 
 const _ = require('lodash')
 
-const extendConfig = require('../lib/extend_config')
+const extendConfig = require('../lib/extendConfig')
 const mainRules = require('./main')
 
 const eslintConfigAirbnb = extendConfig({
