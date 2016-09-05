@@ -19,13 +19,13 @@ module.exports = extendConfig({
   },
   rules: {
     // this two doesn't work in vue
-    'import/no-named-as-default': 0,
-    'import/no-named-as-default-member': 0,
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
 
-    'react/jsx-filename-extension': [2, {
+    'react/jsx-filename-extension': ['error', {
       extensions: ['.jsx', '.vue']
     }],
     // allow use `class` instead of `className`
-    'react/no-unknown-property': 0
+    'react/no-unknown-property': 'off'
   }
 })

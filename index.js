@@ -17,6 +17,6 @@ module.exports = extendConfig({
   },
   rules: {
     // backend code needs more dynamic structure
-    'global-require': 0
+    'global-require': 'off'
   }
 })
