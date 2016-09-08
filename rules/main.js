@@ -16,6 +16,8 @@ module.exports = {
     /*+++++++++++++++++
      + Best Practices +
      +++++++++++++++++*/
+    // don't force every class methods to use `this`
+    'class-methods-use-this': 'off',
     'dot-location': ['error', 'property'],
     'no-alert': 'off',
     'no-else-return': 'off',
@@ -93,6 +95,7 @@ module.exports = {
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
+    // we need to import devDependencies in test files
     'import/no-extraneous-dependencies': 'off'
   }
 }
