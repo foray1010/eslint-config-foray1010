@@ -12,6 +12,8 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'no-extra-boolean-cast': 'error',
     'no-unexpected-multiline': 'error',
+    // if requireStringLiterals is true, it breaks my simple schema
+    'valid-typeof': ['error', {requireStringLiterals: false}],
 
     /*+++++++++++++++++
      + Best Practices +
