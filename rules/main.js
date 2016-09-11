@@ -76,7 +76,7 @@ module.exports = {
     /*+++++++++++++++
      + ECMAScript 6 +
      +++++++++++++++*/
-    'arrow-body-style': 'off',
+    'arrow-parens': ['error', 'always']
     'constructor-super': 'error',
     'generator-star-spacing': ['error', 'after'],
     'object-shorthand': 'off',
