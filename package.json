@@ -1,11 +1,19 @@
 {
   "name": "eslint-config-foray1010",
   "description": "my own ESLint config",
-  "version": "3.5.0",
-  "homepage": "https://github.com/foray1010/eslint-config-foray1010",
+  "version": "3.5.1",
+  "engines": {
+    "node": ">= 4.2"
+  },
+  "private": false,
+  "license": "MIT",
   "author": {
     "name": "foray1010"
   },
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/foray1010/eslint-config-foray1010",
   "repository": {
     "type": "git",
     "url": "git://github.com/foray1010/eslint-config-foray1010.git"
@@ -14,9 +22,6 @@
     "url": "https://github.com/foray1010/eslint-config-foray1010/issues"
   },
   "main": "index.js",
-  "engines": {
-    "node": ">= 4.2"
-  },
   "scripts": {
     "lint": "eslint .",
     "test": "./scripts/test_repo.sh Popup-my-Bookmarks && ./scripts/test_repo.sh didyoumean2"
@@ -41,9 +46,10 @@
     "eslint-plugin-react": "^6.2.0",
     "lodash": "^4.14.1"
   },
-  "keywords": [
-    "eslint"
-  ],
-  "license": "MIT",
-  "private": false
+  "devDependencies": {
+    "pre-commit": "^1.1.3"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
