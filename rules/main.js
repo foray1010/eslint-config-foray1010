@@ -76,6 +76,9 @@ module.exports = {
     /*+++++++++++++++
      + ECMAScript 6 +
      +++++++++++++++*/
+    // should not force developer to remove the scope for arrow function
+    // because sometime we do it for clearer code
+    'arrow-body-style': 'off',
     'arrow-parens': ['error', 'always'],
     'constructor-super': 'error',
     'generator-star-spacing': ['error', 'after'],
