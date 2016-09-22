@@ -27,19 +27,19 @@ Z for removing rules/options (more loose)
   3. Create a `.eslintrc.yml` in the project root
 
     ```yml
-    extends: "foray1010"
+    extends: "eslint-config-foray1010"
     ```
 
-    If your repo is a front-end project using [babel](https://babeljs.io/), you should extends `foray1010/react` instead
+    If your repo is a front-end project using [babel](https://babeljs.io/), you should extends `/react` instead
 
     ```yml
-    extends: "foray1010/react"
+    extends: "eslint-config-foray1010/react"
     ```
 
     We also support [vue](https://github.com/vuejs/vue)
 
     ```yml
-    extends: "foray1010/vue"
+    extends: "eslint-config-foray1010/vue"
     ```
 
   4. Add it to `npm test` so that  `travis` can test it for us, for example:
@@ -67,7 +67,7 @@ Z for removing rules/options (more loose)
   - Create a `.eslintrc.yml` in `$HOME`
 
     ```yml
-    extends: "foray1010"
+    extends: "eslint-config-foray1010"
     ```
 
 2. For `Atom`:
