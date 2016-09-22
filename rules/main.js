@@ -9,68 +9,71 @@ module.exports = {
     /*++++++++++++++++++
      + Possible Errors +
      ++++++++++++++++++*/
+    // Don't put comma in the last item of object/array, looks very weird
     'comma-dangle': ['error', 'never'],
-    'no-extra-boolean-cast': 'error',
-    'no-unexpected-multiline': 'error',
-    // if requireStringLiterals is true, it breaks my simple schema
+    // if requireStringLiterals is true, it doesn't allow using variable to compare
+    // with `typeof another_variable`, which we do it often when creating library
     'valid-typeof': ['error', {requireStringLiterals: false}],
 
     /*+++++++++++++++++
      + Best Practices +
      +++++++++++++++++*/
-    // don't force every class methods to use `this`
-    'class-methods-use-this': 'off',
-    'dot-location': ['error', 'property'],
+    // Allow `alert`, no reason to disable it
     'no-alert': 'off',
+    // Although `else` after `return` is useless,
+    // it shows the relationship between code and improves readability of the code
+    // If we have `else if` condition (without `return`) later,
+    // with this rule on, developers will need to read through the codes and
+    // find out which part is `else` code and put it back to `else` scope again,
+    // which is easy to make mistake
     'no-else-return': 'off',
-    'no-implicit-coercion': 'error',
+    // Disable it because we may need to create function inside loop
     'no-loop-func': 'off',
+    // prefer always use new to create class instance for better readability
     'no-new': 'off',
+    // may need for `options = options || {}`
     'no-param-reassign': 'off',
-    'no-script-url': 'off',
+    // for clearer code, there are much more better way than doing `a() || (b = c)` or `a || b()`
     'no-unused-expressions': 'off',
-    'no-useless-call': 'error',
-    'no-void': 'error',
+    // as we omit semi-colon, iife may break the code
     'wrap-iife': 'off',
 
     /*++++++++++++
      + Variables +
      ++++++++++++*/
+    // prevents shadowing of built-in global variables
     'no-shadow': ['error', {
       builtinGlobals: true
     }],
-    'no-unused-vars': ['warn', {
-      args: 'after-used',
-      vars: 'local'
-    }],
+    // we may need to use the function before we define it, check `js hoisting`
     'no-use-before-define': 'off',
 
     /*++++++++++
      + Node.js +
      ++++++++++*/
-    'no-mixed-requires': ['error', true],
-    'no-new-require': 'error',
-    'no-path-concat': 'error',
-    'no-process-exit': 'error',
+    // to group require together for better readability
+    'no-mixed-requires': 'error',
 
     /*+++++++++++++++++++
      + Stylistic Issues +
      +++++++++++++++++++*/
+    // don't force adding name to anonymous function
     'func-names': 'off',
-    'new-cap': ['error', {
-      capIsNew: false
-    }],
-    'new-parens': 'error',
+    // some codes, such as `new Bunyan.createLogger`, cannot pass, so disable it
+    'new-cap': 'off',
+    // we don't want to remove support of `continue` in loop
     'no-continue': 'off',
+    // disable it allow better readability
     'no-lonely-if': 'off',
-    'no-mixed-operators': ['error', {
-      allowSamePrecedence: true
-    }],
+    // let developers decide when to use bracket to explicitly state the priority of operators
+    'no-mixed-operators': 'off',
+    // we use underscore prefix to show if it is a private variable
     'no-underscore-dangle': 'off',
-    'no-unneeded-ternary': 'error',
+    // prefer no space between curly bracket
     'object-curly-spacing': ['error', 'never'],
-    'operator-assignment': ['error', 'always'],
+    // prefer putting operator at the end of line
     'operator-linebreak': ['error', 'after'],
+    // prefer no semi colon, just my preference
     semi: ['error', 'never'],
 
     /*+++++++++++++++
@@ -79,10 +82,11 @@ module.exports = {
     // should not force developer to remove the scope for arrow function
     // because sometime we do it for clearer code
     'arrow-body-style': 'off',
+    // I prefer always has bracket, it looks more consistent
     'arrow-parens': ['error', 'always'],
-    'constructor-super': 'error',
-    'generator-star-spacing': ['error', 'after'],
+    // don't force shorthand for better readability
     'object-shorthand': 'off',
+    // sometime not using template string is more readable
     'prefer-template': 'off',
     // need to use generator function in koa even if we don't use yield
     'require-yield': 'off',
@@ -90,12 +94,6 @@ module.exports = {
     /*+++++++++
      + Legacy +
      +++++++++*/
-    'max-len': ['error', 100, 2, {
-      ignoreUrls: true,
-      ignoreComments: true
-    }],
-    'no-bitwise': 'error',
-    'no-plusplus': 'error',
 
     /*++++++++++++++++
      + Other plugins +
