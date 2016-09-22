@@ -18,6 +18,8 @@ module.exports = {
     /*+++++++++++++++++
      + Best Practices +
      +++++++++++++++++*/
+    // don't force every class methods to use `this`
+    'class-methods-use-this': 'off',
     // Allow `alert`, no reason to disable it
     'no-alert': 'off',
     // Although `else` after `return` is useless,
@@ -33,6 +35,8 @@ module.exports = {
     'no-new': 'off',
     // may need for `options = options || {}`
     'no-param-reassign': 'off',
+    // we want to preserve the semantic meaning of link, such as `<a href="javascript:void(0)"></a>`
+    'no-script-url': 'off',
     // for clearer code, there are much more better way than doing `a() || (b = c)` or `a || b()`
     'no-unused-expressions': 'off',
     // as we omit semi-colon, iife may break the code
