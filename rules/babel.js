@@ -6,7 +6,7 @@ const extendConfig = require('../lib/extendConfig')
 const mainRules = require('./main')
 
 const eslintConfigAirbnb = extendConfig({
-  extends: 'airbnb'
+  extends: 'eslint-config-airbnb'
 })
 
 const migratedRules = {}
