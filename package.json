@@ -6,16 +6,15 @@
   },
   "description": "my own ESLint config",
   "keywords": [
+    "config",
     "eslint"
   ],
   "private": false,
-
   "license": "MIT",
   "author": "foray1010",
   "homepage": "https://github.com/foray1010/eslint-config-foray1010",
   "repository": "foray1010/eslint-config-foray1010",
   "bugs": "https://github.com/foray1010/eslint-config-foray1010/issues",
-
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -24,7 +23,6 @@
   "pre-commit": [
     "lint"
   ],
-
   "peerDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.2.2",
