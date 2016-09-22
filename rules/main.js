@@ -29,6 +29,8 @@ module.exports = {
     // find out which part is `else` code and put it back to `else` scope again,
     // which is easy to make mistake
     'no-else-return': 'off',
+    // Explicitly convert the type, increase readability
+    'no-implicit-coercion': 'error',
     // Disable it because we may need to create function inside loop
     'no-loop-func': 'off',
     // prefer always use new to create class instance for better readability
