@@ -39,7 +39,7 @@ module.exports = {
     'no-param-reassign': 'off',
     // we want to preserve the semantic meaning of link, such as `<a href="javascript:void(0)"></a>`
     'no-script-url': 'off',
-    // for clearer code, there are much more better way than doing `a() || (b = c)` or `a || b()`
+    // syntax of `chai` will throw error for this rule
     'no-unused-expressions': 'off',
     // as we omit semi-colon, iife may break the code
     'wrap-iife': 'off',
