@@ -18,6 +18,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
+    "np": "np",
     "test": "./scripts/test_repo.sh Popup-my-Bookmarks && ./scripts/test_repo.sh didyoumean2"
   },
   "pre-commit": [
@@ -44,6 +45,7 @@
     "lodash": "^4.14.1"
   },
   "devDependencies": {
+    "np": "^2.9.0",
     "pre-commit": "^1.1.3"
   }
 }
