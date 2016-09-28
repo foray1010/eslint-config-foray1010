@@ -104,6 +104,8 @@ module.exports = {
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
+    // we need it for making module loader
+    'import/no-dynamic-require': 'off',
     // we need to import devDependencies in test files
     'import/no-extraneous-dependencies': 'off'
   }
