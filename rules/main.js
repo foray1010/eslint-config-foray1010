@@ -107,6 +107,8 @@ module.exports = {
     // we need it for making module loader
     'import/no-dynamic-require': 'off',
     // we need to import devDependencies in test files
-    'import/no-extraneous-dependencies': 'off'
+    'import/no-extraneous-dependencies': 'off',
+    // some files are only for utility, so it will not export default
+    'import/prefer-default-export': 'off'
   }
 }
