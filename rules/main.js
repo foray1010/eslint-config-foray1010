@@ -73,6 +73,13 @@ module.exports = {
     'no-lonely-if': 'off',
     // let developers decide when to use bracket to explicitly state the priority of operators
     'no-mixed-operators': 'off',
+    // we want to allow 'ForOfStatement'
+    'no-restricted-syntax': [
+      'error',
+      'ForInStatement',
+      'LabeledStatement',
+      'WithStatement'
+    ],
     // we use underscore prefix to show if it is a private variable
     'no-underscore-dangle': 'off',
     // prefer no space between curly bracket
