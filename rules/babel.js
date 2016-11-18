@@ -15,12 +15,8 @@ const mainRules = extendConfig({
 // using eslint-plugin-babel to deal with these rules
 const migratedRules = {}
 const migrateRuleNames = [
-  'array-bracket-spacing',
-  'arrow-parens',
-  'generator-star-spacing',
   'new-cap',
-  'object-curly-spacing',
-  'object-shorthand'
+  'object-curly-spacing'
 ]
 for (const migrateRuleName of migrateRuleNames) {
   migratedRules[migrateRuleName] = 'off'
@@ -33,9 +29,6 @@ module.exports = {
     'babel'
   ],
   rules: _.merge(migratedRules, {
-    // we don't use flow at all
-    'babel/flow-object-type': 'off',
-    'babel/func-params-comma-dangle': ['error', 'never'],
     // some logic may require await inside loop instead of run in parallel
     // for example, when we want to make sure one request per time and don't excess rate limit
     'babel/no-await-in-loop': 'off'
