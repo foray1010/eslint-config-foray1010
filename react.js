@@ -30,6 +30,12 @@ module.exports = extendConfig({
     // allow 'object', it is very annoying to define the object structure every time
     'react/forbid-prop-types': ['error', {
       forbid: ['any', 'array']
+    }],
+
+    // ignorePureComponents because PureComponents helps improving performance and
+    // make the flow easier to understand
+    'react/prefer-stateless-function': ['error', {
+      ignorePureComponents: true
     }]
   }
 })
