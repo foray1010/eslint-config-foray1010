@@ -11,6 +11,8 @@ module.exports = {
      ++++++++++++++++++*/
     // Don't put comma in the last item of object/array, looks very weird
     'comma-dangle': ['error', 'never'],
+    // Sometime we must `await` one by one, not in parallel
+    'no-await-in-loop': 'off',
     // if requireStringLiterals is true, it doesn't allow using variable to compare
     // with `typeof another_variable`, which we do it often when creating library
     'valid-typeof': ['error', {requireStringLiterals: false}],
