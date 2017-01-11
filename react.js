@@ -36,6 +36,10 @@ module.exports = extendConfig({
     // make the flow easier to understand
     'react/prefer-stateless-function': ['error', {
       ignorePureComponents: true
-    }]
+    }],
+
+    // React.PropTypes doesn't allow to use `null` with `isRequired`
+    // which break many use case, we use `null` to represent that value is not exist yet
+    'react/require-default-props': 'off'
   }
 })
