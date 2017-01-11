@@ -2,7 +2,7 @@
   "name": "eslint-config-foray1010",
   "version": "3.11.4",
   "engines": {
-    "node": ">= 4.2"
+    "node": ">=4.2"
   },
   "description": "my own ESLint config",
   "keywords": [
@@ -26,24 +26,24 @@
   ],
   "peerDependencies": {
     "babel-eslint": "^7.0.0",
-    "eslint": "^3.2.2",
+    "eslint": "^3.13.0",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.29.1",
     "eslint-plugin-html": "^1.5.2",
-    "eslint-plugin-import": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "~6.7.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   },
   "dependencies": {
     "babel-eslint": "^7.0.0",
-    "eslint": "^3.2.2",
+    "eslint": "^3.13.0",
     "eslint-config-airbnb": "14.0.0",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.29.1",
     "eslint-plugin-html": "^1.5.2",
-    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "~6.9.0",
+    "eslint-plugin-react": "^6.9.0",
     "lodash": "^4.14.1"
   },
   "devDependencies": {
