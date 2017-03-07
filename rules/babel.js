@@ -1,7 +1,5 @@
 'use strict'
 
-const _ = require('lodash')
-
 const extendConfig = require('../lib/extendConfig')
 
 const mainRules = extendConfig({
@@ -16,6 +14,7 @@ const mainRules = extendConfig({
 const migratedRules = {}
 const migrateRuleNames = [
   'new-cap',
+  'no-invalid-this',
   'object-curly-spacing'
 ]
 for (const migrateRuleName of migrateRuleNames) {
@@ -28,9 +27,5 @@ module.exports = {
   plugins: [
     'babel'
   ],
-  rules: _.merge(migratedRules, {
-    // some logic may require await inside loop instead of run in parallel
-    // for example, when we want to make sure one request per time and don't excess rate limit
-    'babel/no-await-in-loop': 'off'
-  })
+  rules: migratedRules
 }
