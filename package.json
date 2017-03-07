@@ -26,7 +26,6 @@
   ],
   "peerDependencies": {
     "babel-eslint": "^7.0.0",
-    "eslint": "^3.13.0",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.29.1",
     "eslint-plugin-html": "^2.0.0",
@@ -36,7 +35,6 @@
   },
   "dependencies": {
     "babel-eslint": "^7.0.0",
-    "eslint": "^3.13.0",
     "eslint-config-airbnb": "14.1.0",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.29.1",
