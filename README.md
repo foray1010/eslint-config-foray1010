@@ -1,5 +1,7 @@
 # eslint-config-foray1010
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/foray1010/eslint-config-foray1010.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://img.shields.io/circleci/project/foray1010/eslint-config-foray1010/master.svg)](https://circleci.com/gh/foray1010/eslint-config-foray1010/tree/master)
 [![Dependency Status](https://gemnasium.com/foray1010/eslint-config-foray1010.svg)](https://gemnasium.com/foray1010/eslint-config-foray1010)
 
