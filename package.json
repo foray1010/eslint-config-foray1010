@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "eslint": "^3.17.1",
-    "husky": "^0.13.2",
+    "husky": "^0.14.0",
     "np": "^2.9.0"
   }
 }
