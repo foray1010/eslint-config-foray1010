@@ -23,10 +23,10 @@
     "test": "./scripts/test_repo.sh Popup-my-Bookmarks && ./scripts/test_repo.sh didyoumean2"
   },
   "peerDependencies": {
-    "babel-eslint": "^7.0.0",
+    "babel-eslint": "^8.0.0",
     "eslint-plugin-babel": "^4.0.0",
-    "eslint-plugin-flowtype": "^2.29.1",
-    "eslint-plugin-html": "^3.0.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0"
