@@ -4,9 +4,7 @@ module.exports = {
   env: {
     webextensions: true
   },
-  plugins: [
-    'html'
-  ],
+  plugins: ['html'],
   settings: {
     'html/indent': '0',
     'html/report-bad-indent': 'error'

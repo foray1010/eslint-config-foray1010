@@ -28,15 +28,21 @@ module.exports = extendConfig({
     'jsx-a11y/no-static-element-interactions': 'off',
 
     // allow 'object', it is very annoying to define the object structure every time
-    'react/forbid-prop-types': ['error', {
-      forbid: ['any', 'array']
-    }],
+    'react/forbid-prop-types': [
+      'error',
+      {
+        forbid: ['any', 'array']
+      }
+    ],
 
     // ignorePureComponents because PureComponents helps improving performance and
     // make the flow easier to understand
-    'react/prefer-stateless-function': ['error', {
-      ignorePureComponents: true
-    }],
+    'react/prefer-stateless-function': [
+      'error',
+      {
+        ignorePureComponents: true
+      }
+    ],
 
     // React.PropTypes doesn't allow to use `null` with `isRequired`
     // which break many use case, we use `null` to represent that value is not exist yet
