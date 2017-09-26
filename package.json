@@ -5,10 +5,7 @@
     "node": ">=4.2"
   },
   "description": "my own ESLint config",
-  "keywords": [
-    "config",
-    "eslint"
-  ],
+  "keywords": ["config", "eslint"],
   "private": false,
   "license": "MIT",
   "author": "foray1010",
@@ -19,8 +16,12 @@
   "scripts": {
     "lint": "eslint .",
     "np": "np",
-    "precommit": "yarn run lint",
+    "precommit": "lint-staged",
     "test": "./scripts/test_repo.sh Popup-my-Bookmarks && ./scripts/test_repo.sh didyoumean2"
+  },
+  "lint-staged": {
+    "*.js": ["prettier-eslint --write", "eslint --fix", "git add"],
+    "*.json": ["prettier-eslint --write", "git add"]
   },
   "peerDependencies": {
     "babel-eslint": "^8.0.0",
@@ -45,6 +46,8 @@
   "devDependencies": {
     "eslint": "^4.3.0",
     "husky": "^0.14.3",
-    "np": "^2.9.0"
+    "lint-staged": "^4.2.3",
+    "np": "^2.9.0",
+    "prettier-eslint-cli": "^4.3.2"
   }
 }

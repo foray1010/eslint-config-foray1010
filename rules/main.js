@@ -50,9 +50,12 @@ module.exports = {
      + Variables +
      ++++++++++++*/
     // prevents shadowing of built-in global variables
-    'no-shadow': ['error', {
-      builtinGlobals: true
-    }],
+    'no-shadow': [
+      'error',
+      {
+        builtinGlobals: true
+      }
+    ],
     // we may need to use the function before we define it, check `js hoisting`
     'no-use-before-define': 'off',
 
@@ -76,12 +79,7 @@ module.exports = {
     // let developers decide when to use bracket to explicitly state the priority of operators
     'no-mixed-operators': 'off',
     // we want to allow 'ForOfStatement'
-    'no-restricted-syntax': [
-      'error',
-      'ForInStatement',
-      'LabeledStatement',
-      'WithStatement'
-    ],
+    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     // we use underscore prefix to show if it is a private variable
     'no-underscore-dangle': 'off',
     // prefer no space between curly bracket

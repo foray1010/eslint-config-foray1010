@@ -3,9 +3,7 @@
 const extendConfig = require('./lib/extendConfig')
 
 module.exports = extendConfig({
-  extends: [
-    'eslint-config-foray1010/react'
-  ],
+  extends: ['eslint-config-foray1010/react'],
   settings: {
     'import/extensions': ['.js', '.jsx', '.vue'],
     'import/resolver': {
@@ -22,9 +20,12 @@ module.exports = extendConfig({
     'import/no-named-as-default': 'off',
     'import/no-named-as-default-member': 'off',
 
-    'react/jsx-filename-extension': ['error', {
-      extensions: ['.jsx', '.vue']
-    }],
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.jsx', '.vue']
+      }
+    ],
     // allow use `class` instead of `className`
     'react/no-unknown-property': 'off'
   }
