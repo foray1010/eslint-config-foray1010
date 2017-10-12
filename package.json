@@ -38,7 +38,7 @@
     "lodash": "^4.14.1"
   },
   "devDependencies": {
-    "eslint": "^4.3.0",
+    "eslint": "^4.8.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.2.3",
     "np": "^2.9.0",
