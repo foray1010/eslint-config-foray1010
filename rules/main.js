@@ -70,6 +70,8 @@ module.exports = {
      +++++++++++++++++++*/
     // don't force adding name to anonymous function
     'func-names': 'off',
+    // don't force to not break newline within function paren
+    'function-paren-newline': ['error', 'consistent'],
     // some codes, such as `new Bunyan.createLogger`, cannot pass, so disable it
     'new-cap': 'off',
     // we don't want to remove support of `continue` in loop
@@ -88,6 +90,8 @@ module.exports = {
     'operator-linebreak': ['error', 'after'],
     // prefer no semi colon, just my preference
     semi: ['error', 'never'],
+    // type semi colon at the beginning if needed
+    'semi-style': ['error', 'first'],
 
     /*+++++++++++++++
      + ECMAScript 6 +
@@ -116,6 +120,8 @@ module.exports = {
     // we need to import devDependencies in test files
     'import/no-extraneous-dependencies': 'off',
     // some files are only for utility, so it will not export default
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    // let developer to decide when the project needs to support users with physical disabilities
+    'jsx-a11y/click-events-have-key-events': 'off'
   }
 }
