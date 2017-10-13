@@ -103,6 +103,8 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     // don't force shorthand for better readability
     'object-shorthand': 'off',
+    // too strict, this coding style doesn't matter to readability and quality
+    'prefer-destructuring': 'off',
     // sometime not using template string is more readable
     'prefer-template': 'off',
     // need to use generator function in koa even if we don't use yield
