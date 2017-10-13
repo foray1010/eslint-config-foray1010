@@ -1,8 +1,8 @@
 'use strict'
 
-const extendConfig = require('../lib/extendConfig')
+const extendsConfig = require('../lib/extendsConfig')
 
-const mainRules = extendConfig({
+const mainRules = extendsConfig({
   extends: ['eslint-config-airbnb', 'eslint-config-foray1010/rules/main']
 })
 

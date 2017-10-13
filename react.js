@@ -1,8 +1,8 @@
 'use strict'
 
-const extendConfig = require('./lib/extendConfig')
+const extendsConfig = require('./lib/extendsConfig')
 
-module.exports = extendConfig({
+module.exports = extendsConfig({
   extends: [
     'eslint-config-airbnb',
     'eslint-config-foray1010/rules/main',
