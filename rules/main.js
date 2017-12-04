@@ -37,14 +37,8 @@ module.exports = {
     'no-loop-func': 'off',
     // prefer always use new to create class instance for better readability
     'no-new': 'off',
-    // may need for `options = options || {}`
-    'no-param-reassign': 'off',
     // we want to preserve the semantic meaning of link, such as `<a href="javascript:void(0)"></a>`
     'no-script-url': 'off',
-    // syntax of `chai` will throw error for this rule
-    'no-unused-expressions': 'off',
-    // as we omit semi-colon, iife may break the code
-    'wrap-iife': 'off',
 
     /*++++++++++++
      + Variables +
@@ -57,7 +51,7 @@ module.exports = {
       }
     ],
     // we may need to use the function before we define it, check `js hoisting`
-    'no-use-before-define': 'off',
+    'no-use-before-define': ['error', {functions: false, classes: false, variables: false}],
 
     /*++++++++++
      + Node.js +
@@ -68,8 +62,8 @@ module.exports = {
     /*+++++++++++++++++++
      + Stylistic Issues +
      +++++++++++++++++++*/
-    // don't force adding name to anonymous function
-    'func-names': 'off',
+    // only force adding name to anonymous function if it cannot be automatically added in es6
+    'func-names': ['error', 'as-needed'],
     // don't force to not break newline within function paren
     'function-paren-newline': ['error', 'consistent'],
     // some codes, such as `new Bunyan.createLogger`, cannot pass, so disable it
@@ -101,8 +95,6 @@ module.exports = {
     'arrow-body-style': 'off',
     // I prefer always has bracket, it looks more consistent
     'arrow-parens': ['error', 'always'],
-    // don't force shorthand for better readability
-    'object-shorthand': 'off',
     // too strict, this coding style doesn't matter to readability and quality
     'prefer-destructuring': 'off',
     // sometime not using template string is more readable
