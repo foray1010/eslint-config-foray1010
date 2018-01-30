@@ -6,9 +6,17 @@ module.exports = extendsConfig({
   extends: [
     'eslint-config-airbnb',
     'eslint-config-foray1010/rules/main',
-    'eslint-config-foray1010/rules/frontend'
+    'eslint-config-foray1010/rules/frontend',
+    'eslint-config-foray1010/rules/babel',
+    'eslint-config-foray1010/rules/unit-test'
   ],
   settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.json']
+      }
+    },
+    'import/extensions': ['.js'],
     react: {
       pragma: 'createElement'
     }
@@ -32,6 +40,14 @@ module.exports = extendsConfig({
       'error',
       {
         forbid: ['any', 'array']
+      }
+    ],
+
+    // do not use .jsx because of https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.js']
       }
     ],
 
