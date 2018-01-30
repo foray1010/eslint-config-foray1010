@@ -14,6 +14,7 @@
   "bugs": "https://github.com/foray1010/eslint-config-foray1010/issues",
   "main": "index.js",
   "scripts": {
+    "ignore-sync": "ignore-sync",
     "lint": "eslint .",
     "np": "np",
     "precommit": "lint-staged",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "eslint": "^4.9.0",
     "husky": "^0.14.3",
+    "ignore-sync": "^1.0.0",
     "lint-staged": "^6.0.0",
     "np": "^2.9.0",
     "prettier-eslint-cli": "^4.3.2"
