@@ -1,23 +1,21 @@
 #!/bin/bash
 
+testFolder="integration_tests"
 repoName=$1
+branch="${2:-master}"
 
-git clone https://github.com/foray1010/"$repoName"
+yarn install
+yarn link
+
+mkdir -p "$testFolder" && cd "$testFolder"
+rm -rf "$repoName"
+
+git clone --depth=1 -b "$branch" https://github.com/foray1010/"$repoName"
 cd "$repoName"
 
-npm install
+rm -rf package.json yarn.lock
+cp ../../package.json .
 
-cd ../node_modules
-eslintDependenies=($(ls -d eslint*))
-cd -
-for eslintDependency in "${eslintDependenies[@]}"; do
-  rm -rf node_modules/"$eslintDependency"
-
-  if [[ "$eslintDependency" = "eslint-config-foray1010" ]]; then
-    ln -s ../../node_modules/"$eslintDependency" node_modules/"$eslintDependency"
-  else
-    cp -r ../node_modules/"$eslintDependency" node_modules/"$eslintDependency"
-  fi
-done
-
-npm run lint
+yarn install --production
+yarn link eslint-config-foray1010
+yarn integration_test:lint

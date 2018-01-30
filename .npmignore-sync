@@ -7,5 +7,6 @@ Global/Windows.gitignore
 [inline]
 .*
 circle.yml
+integration_tests
 scripts/
 yarn.lock

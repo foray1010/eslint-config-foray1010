@@ -126,5 +126,6 @@ $RECYCLE.BIN/
 
 .*
 circle.yml
+integration_tests
 scripts/
 yarn.lock
