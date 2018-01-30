@@ -1,0 +1,9 @@
+[github/gitignore]
+Node.gitignore
+Global/macOS.gitignore
+Global/Linux.gitignore
+Global/Windows.gitignore
+
+[inline]
+# exclude itself for `npm run lint`
+!node_modules/eslint-config-foray1010

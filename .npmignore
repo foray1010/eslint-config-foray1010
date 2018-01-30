@@ -124,4 +124,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-!node_modules/eslint-config-foray1010
+.*
+circle.yml
+scripts/
+yarn.lock
