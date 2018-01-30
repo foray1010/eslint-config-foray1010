@@ -15,10 +15,15 @@
   "main": "index.js",
   "scripts": {
     "ignore-sync": "ignore-sync",
+    "integration_test:lint":
+      "eslint --rule \"{'import/extensions':'off','import/no-unresolved':'off'}\" .",
     "lint": "eslint .",
     "np": "np",
     "precommit": "lint-staged",
-    "test": "./scripts/test_repo.sh Popup-my-Bookmarks && ./scripts/test_repo.sh didyoumean2"
+    "test": "npm-run-all -p test:*",
+    "test:didyoumean2": "./scripts/test_repo.sh didyoumean2 2.x",
+    "test:ignore-sync": "./scripts/test_repo.sh ignore-sync",
+    "test:Popup-my-Bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks"
   },
   "lint-staged": {
     "*.js": ["prettier-eslint --write", "eslint --fix", "git add"],
@@ -43,6 +48,7 @@
     "ignore-sync": "^1.0.0",
     "lint-staged": "^6.0.0",
     "np": "^2.9.0",
+    "npm-run-all": "^4.1.2",
     "prettier-eslint-cli": "^4.3.2"
   }
 }
