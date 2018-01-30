@@ -3,7 +3,11 @@
 const extendsConfig = require('./lib/extendsConfig')
 
 module.exports = extendsConfig({
-  extends: ['eslint-config-airbnb/base', 'eslint-config-foray1010/rules/main'],
+  extends: [
+    'eslint-config-airbnb/base',
+    'eslint-config-foray1010/rules/main',
+    'eslint-config-foray1010/rules/unit-test'
+  ],
   parserOptions: {
     ecmaFeatures: {
       // if you want to use jsx, extends "foray1010/react"
