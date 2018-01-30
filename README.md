@@ -36,19 +36,13 @@ Z for removing rules/options (more loose)
     extends: "eslint-config-foray1010/react"
     ```
 
-    We also support [vue](https://github.com/vuejs/vue)
-
-    ```yml
-    extends: "eslint-config-foray1010/vue"
-    ```
-
   4. Add it to `npm test` so that  `travis` can test it for us, for example:
 
     `package.json`:
     ```json
     {
       "scripts": {
-        "lint": "eslint --ext .js,.jsx,.vue ."
+        "lint": "eslint ."
       }
     }
     ```
