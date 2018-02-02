@@ -36,6 +36,10 @@ module.exports = extendsConfig({
     // this rule will block us from doing that
     'jsx-a11y/no-static-element-interactions': 'off',
 
+    // if prop exists in defaultProps, then prop in propTypes can be required
+    // so that developer can safety assume the prop always exist
+    'react/default-props-match-prop-types': ['error', {allowRequiredDefaults: true}],
+
     // allow 'object', it is very annoying to define the object structure every time
     'react/forbid-prop-types': [
       'error',
