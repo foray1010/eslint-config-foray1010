@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-foray1010",
-  "version": "6.6.0",
+  "version": "6.6.1",
   "engines": {
-    "node": ">=4.2"
+    "node": ">=8.9"
   },
   "description": "my own ESLint config",
   "keywords": ["config", "eslint"],
