@@ -26,7 +26,7 @@ module.exports = {
     'flowtype/object-type-delimiter': 'error',
     // use `{| key: type |}` to define exact object type, no extra key can pass through
     'flowtype/require-exact-type': 'error',
-    'flowtype/require-valid-file-annotation': ['error', 'always', {annotationStyle: 'line'}],
+    'flowtype/require-valid-file-annotation': ['error', 'never', {annotationStyle: 'line'}],
     'flowtype/semi': ['error', 'never'],
     'flowtype/sort-keys': 'error'
   }
