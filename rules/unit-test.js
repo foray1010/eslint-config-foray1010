@@ -1,10 +1,9 @@
 'use strict'
 
 module.exports = {
+  extends: ['plugin:jest/recommended'],
+  plugins: ['eslint-plugin-jest'],
   env: {
-    jasmine: true,
-    jest: true,
-    mocha: true,
-    qunit: true
+    jest: true
   }
 }
