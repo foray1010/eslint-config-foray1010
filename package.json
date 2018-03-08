@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-foray1010",
-  "version": "6.6.1",
+  "version": "6.7.0",
   "engines": {
     "node": ">=8.9"
   },
@@ -39,6 +39,7 @@
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-ramda": "^2.5.0",
     "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {

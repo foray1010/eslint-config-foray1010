@@ -12,6 +12,8 @@
 
 ### X.Y.Z
 
+X for upgrading eslint or node engine (breaking changes)
+
 Y for adding rules/options (more strict)
 
 Z for removing rules/options (more loose)
