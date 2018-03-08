@@ -9,6 +9,7 @@ module.exports = extendsConfig({
     'eslint-config-foray1010/rules/babel',
     'eslint-config-foray1010/rules/frontend',
     'eslint-config-foray1010/rules/es-modules',
+    'eslint-config-foray1010/rules/ramda',
     'eslint-config-foray1010/rules/unit-test'
   ],
   settings: {

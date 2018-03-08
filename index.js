@@ -6,6 +6,7 @@ module.exports = extendsConfig({
   extends: [
     'eslint-config-airbnb/base',
     'eslint-config-foray1010/rules/main',
+    'eslint-config-foray1010/rules/ramda',
     'eslint-config-foray1010/rules/unit-test'
   ],
   parserOptions: {
