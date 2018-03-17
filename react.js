@@ -57,6 +57,10 @@ module.exports = extendsConfig({
       }
     ],
 
+    // will deprecate in react 16.3
+    'react/no-did-mount-set-state': 'off',
+    'react/no-did-update-set-state': 'off',
+
     // ignorePureComponents because PureComponents helps improving performance and
     // make the flow easier to understand
     'react/prefer-stateless-function': [
