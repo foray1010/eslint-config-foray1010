@@ -33,6 +33,9 @@ module.exports = extendsConfig({
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
+    // this affects UX for normal users
+    'jsx-a11y/no-autofocus': 'off',
+
     // sometime we may just want to apply mouseDown event to whole webpage to disable right click
     // this rule will block us from doing that
     'jsx-a11y/no-static-element-interactions': 'off',
