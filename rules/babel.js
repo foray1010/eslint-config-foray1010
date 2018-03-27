@@ -3,7 +3,7 @@
 const extendsConfig = require('../lib/extendsConfig')
 
 const baseConfig = extendsConfig({
-  extends: ['eslint-config-airbnb', 'eslint-config-foray1010/rules/base']
+  extends: ['eslint-config-airbnb/base', 'eslint-config-foray1010/rules/base']
 })
 
 // as these rules do not work with babel-eslint
