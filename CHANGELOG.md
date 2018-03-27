@@ -8,7 +8,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* remove all jsx-a11y related rules ([95aafe0](https://github.com/foray1010/eslint-config-foray1010/commit/95aafe0))
 * use airbnb/base to generate babel rules instead ([14f9635](https://github.com/foray1010/eslint-config-foray1010/commit/14f9635))
 
 
