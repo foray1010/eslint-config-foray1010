@@ -2,8 +2,8 @@
 
 const extendsConfig = require('../lib/extendsConfig')
 
-const mainRules = extendsConfig({
-  extends: ['eslint-config-airbnb', 'eslint-config-foray1010/rules/main']
+const baseConfig = extendsConfig({
+  extends: ['eslint-config-airbnb', 'eslint-config-foray1010/rules/base']
 })
 
 // as these rules do not work with babel-eslint
@@ -12,7 +12,7 @@ const migratedRules = {}
 const migrateRuleNames = ['new-cap', 'no-invalid-this', 'object-curly-spacing', 'semi']
 for (const migrateRuleName of migrateRuleNames) {
   migratedRules[migrateRuleName] = 'off'
-  migratedRules[`babel/${migrateRuleName}`] = mainRules.rules[migrateRuleName]
+  migratedRules[`babel/${migrateRuleName}`] = baseConfig.rules[migrateRuleName]
 }
 
 module.exports = {
