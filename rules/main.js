@@ -114,8 +114,6 @@ module.exports = {
     // we need to import devDependencies in test files
     'import/no-extraneous-dependencies': 'off',
     // some files are only for utility, so it will not export default
-    'import/prefer-default-export': 'off',
-    // let developer to decide when the project needs to support users with physical disabilities
-    'jsx-a11y/click-events-have-key-events': 'off'
+    'import/prefer-default-export': 'off'
   }
 }
