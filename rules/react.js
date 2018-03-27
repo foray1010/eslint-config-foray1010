@@ -3,7 +3,7 @@
 const extendsConfig = require('../lib/extendsConfig')
 
 module.exports = extendsConfig({
-  extends: ['eslint-config-airbnb/rules/react', 'eslint-config-airbnb/rules/react-a11y'],
+  extends: ['eslint-config-airbnb/rules/react'],
   settings: {
     react: {
       pragma: 'createElement'
@@ -25,13 +25,6 @@ module.exports = extendsConfig({
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
-    // this affects UX for normal users
-    'jsx-a11y/no-autofocus': 'off',
-
-    // sometime we may just want to apply mouseDown event to whole webpage to disable right click
-    // this rule will block us from doing that
-    'jsx-a11y/no-static-element-interactions': 'off',
-
     // if prop exists in defaultProps, then prop in propTypes can be required
     // so that developer can safety assume the prop always exist
     'react/default-props-match-prop-types': ['error', {allowRequiredDefaults: true}],
