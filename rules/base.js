@@ -1,10 +1,6 @@
 'use strict'
 
 module.exports = {
-  env: {
-    // force use `window.` prefix
-    browser: false
-  },
   rules: {
     /*++++++++++++++++++
      + Possible Errors +
