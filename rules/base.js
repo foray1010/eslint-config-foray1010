@@ -24,6 +24,8 @@ module.exports = {
     'class-methods-use-this': 'off',
     // Allow `alert`, no reason to disable it
     'no-alert': 'off',
+    // Allow `console.error` as it is useful for catching async error
+    'no-console': 'off',
     // Although `else` after `return` is useless,
     // it shows the relationship between code and improves readability of the code
     // If we have `else if` condition (without `return`) later,
