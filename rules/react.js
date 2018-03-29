@@ -10,12 +10,6 @@ module.exports = extendsConfig({
     }
   },
   rules: {
-    /*++++++++++++++
-     + Strict Mode +
-     ++++++++++++++*/
-    // babel inserts `'use strict';` for us
-    strict: ['error', 'never'],
-
     /*+++++++++++++++++++
      + Stylistic Issues +
      +++++++++++++++++++*/
