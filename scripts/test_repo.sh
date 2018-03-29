@@ -17,6 +17,6 @@ cd "$repoName" || exit
 rm -rf package.json yarn.lock
 cp ../../package.json .
 
-yarn install --production
+yarn install --production --ignore-engines
 yarn link eslint-config-foray1010
 yarn integration_test:lint
