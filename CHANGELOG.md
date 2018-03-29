@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.10.0"></a>
+# [6.10.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.9.0...v6.10.0) (2018-03-29)
+
+
+### Bug Fixes
+
+* browser env setting should be located in rules/frontend ([2b09b7d](https://github.com/foray1010/eslint-config-foray1010/commit/2b09b7d))
+* cannot run on vscode because its node version is <=7.9 ([dde9bd4](https://github.com/foray1010/eslint-config-foray1010/commit/dde9bd4))
+* strict mode rule should be located in rules/es-module ([c200b1a](https://github.com/foray1010/eslint-config-foray1010/commit/c200b1a))
+
+
+### Features
+
+* allow using console such as console.error ([f31f36a](https://github.com/foray1010/eslint-config-foray1010/commit/f31f36a))
+* do not allow using PureComponent if it contains just render method ([3a33075](https://github.com/foray1010/eslint-config-foray1010/commit/3a33075))
+
+
+
 <a name="6.9.0"></a>
 # [6.9.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.8.2...v6.9.0) (2018-03-27)
 
