@@ -43,12 +43,11 @@ module.exports = extendsConfig({
     'react/no-did-mount-set-state': 'off',
     'react/no-did-update-set-state': 'off',
 
-    // ignorePureComponents because PureComponents helps improving performance and
-    // make the flow easier to understand
     'react/prefer-stateless-function': [
       'error',
       {
-        ignorePureComponents: true
+        // do not allow using PureComponent if it contains just `render` method
+        ignorePureComponents: false
       }
     ],
 
