@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.11.0"></a>
+# [6.11.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.10.0...v6.11.0) (2018-03-30)
+
+
+### Features
+
+* **flowtype:** disable no-flow-fix-me-comments, no-mutable-array and require-exact-type ([670b93f](https://github.com/foray1010/eslint-config-foray1010/commit/670b93f))
+* enable more ramda rules ([989202f](https://github.com/foray1010/eslint-config-foray1010/commit/989202f))
+
+
+
 <a name="6.10.0"></a>
 # [6.10.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.9.0...v6.10.0) (2018-03-29)
 
