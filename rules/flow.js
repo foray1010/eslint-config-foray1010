@@ -8,10 +8,6 @@ module.exports = {
     'flowtype/delimiter-dangle': ['error', 'never'],
     // no duplicated key
     'flowtype/no-dupe-keys': 'error',
-    // no `$FlowFixMe`
-    'flowtype/no-flow-fix-me-comments': 'error',
-    // always use `$ReadOnlyArray<>` instead of `Array<>`
-    'flowtype/no-mutable-array': 'error',
     // use boolean instead of Boolean
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-unused-expressions': 'error',
