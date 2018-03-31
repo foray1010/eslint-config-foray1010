@@ -35,7 +35,7 @@
     "app-root-path": "^2.0.1",
     "babel-eslint": "^8.0.0",
     "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-babel": "^5.0.0",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.13.0",
