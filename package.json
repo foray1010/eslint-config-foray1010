@@ -14,6 +14,7 @@
   "bugs": "https://github.com/foray1010/eslint-config-foray1010/issues",
   "main": "index.js",
   "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "ignore-sync": "ignore-sync",
     "integration_test:lint":
       "eslint --rule \"{'import/extensions':'off','import/no-unresolved':'off'}\" .",
@@ -23,6 +24,9 @@
     "test:didyoumean2": "./scripts/test_repo.sh didyoumean2 2.x",
     "test:ignore-sync": "./scripts/test_repo.sh ignore-sync",
     "test:Popup-my-Bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks rewrite-with-redux-saga"
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
   },
   "lint-staged": {
     "*.js": ["prettier-eslint --write", "eslint --fix", "git add"],
@@ -44,6 +48,8 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
     "eslint": "^4.9.0",
     "husky": "^0.14.3",
     "ignore-sync": "^1.0.0",
