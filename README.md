@@ -1,12 +1,11 @@
 # eslint-config-foray1010
 
 [![Build Status](https://img.shields.io/circleci/project/foray1010/eslint-config-foray1010/master.svg)](https://circleci.com/gh/foray1010/eslint-config-foray1010/tree/master)
-[![Dependency Status](https://gemnasium.com/foray1010/eslint-config-foray1010.svg)](https://gemnasium.com/foray1010/eslint-config-foray1010)
 
-[![node](https://img.shields.io/node/v/eslint-config-foray1010.svg)]()
-[![npm](https://img.shields.io/npm/v/eslint-config-foray1010.svg)]()
-[![npm](https://img.shields.io/npm/dm/eslint-config-foray1010.svg)]()
-[![npm](https://img.shields.io/npm/l/eslint-config-foray1010.svg)]()
+[![node](https://img.shields.io/node/v/eslint-config-foray1010.svg)](https://www.npmjs.com/package/eslint-config-foray1010)
+[![npm](https://img.shields.io/npm/v/eslint-config-foray1010.svg)](https://www.npmjs.com/package/eslint-config-foray1010)
+[![npm](https://img.shields.io/npm/dm/eslint-config-foray1010.svg)](https://www.npmjs.com/package/eslint-config-foray1010)
+[![npm](https://img.shields.io/npm/l/eslint-config-foray1010.svg)](https://www.npmjs.com/package/eslint-config-foray1010)
 
 ## Versioning
 
@@ -20,95 +19,102 @@ Z for removing rules/options (more loose)
 
 ## Installation
 
-### on your repository:
-- If you are not or you want to install in the existing repository:
-  1. `npm install --save-dev eslint-config-foray1010`
+### on your repository
 
-  2. Keep the `^` in the `package.json` for `eslint-config-foray1010`, if the project is still in development. Replace the `^` with `~` if you want to prevent new rules which may brother you in travis.
+- If you want to install in the existing repository:
+    1. `npm install --save-dev eslint eslint-config-foray1010`
 
-  3. Create a `.eslintrc.yml` in the project root
+    1. Keep the `^` in the `package.json` for `eslint-config-foray1010`, if the project is still in development. Replace the `^` with `~` if you want to prevent new rules which may brother you in travis.
 
-    ```yml
-    extends: "eslint-config-foray1010"
-    ```
+    1. Create a `.eslintrc.yml` in the project root
 
-    If your repo is a front-end project using [babel](https://babeljs.io/), you should extends `/react` instead
+        ```yml
+        extends: "eslint-config-foray1010"
+        ```
 
-    ```yml
-    extends: "eslint-config-foray1010/react"
-    ```
+        If your repo is a front-end project using [babel](https://babeljs.io/), you should extends `/react` instead
 
-  4. Add it to `npm test` so that  `travis` can test it for us, for example:
+        ```yml
+        extends: "eslint-config-foray1010/react"
+        ```
 
-    `package.json`:
-    ```json
-    {
-      "scripts": {
-        "lint": "eslint ."
-      }
-    }
-    ```
+    1. Add it to `npm test` so that  `travis` can test it for us, for example:
 
-    `travis.yml`:
-    ```yml
-    install:
-      - npm install
-    script:
-      - npm run lint
-    ```
+        `package.json`:
+        ```diff json
+        {
+          "scripts": {
+        +   "lint": "eslint ."
+          }
+        }
+        ```
 
-### on your editor:
+        `travis.yml`:
+        ```diff yml
+        install:
+        + - npm install
+        script:
+        + - npm run lint
+        ```
+
+### on your editor
+
 1. If the repository doesn't have `eslint` installed, you can install it as global package
-  - `npm install -g eslint-config-foray1010`
-  - Create a `.eslintrc.yml` in `$HOME`
 
-    ```yml
-    extends: "eslint-config-foray1010"
-    ```
+    - `npm install -g eslint eslint-config-foray1010`
+    - Create a `.eslintrc.yml` in `$HOME`
 
-2. For `Atom`:
-  - Install in terminal by `apm install linter linter-eslint`
-  - If you want to use global eslint, `Preference` -> `Packages` -> `linter-eslint` -> check `Use Global ESLint`
+        ```yml
+        extends: "eslint-config-foray1010"
+        ```
 
-3. For `PhpStorm`:
-  - `Languages & Frameworks` -> `JavaScript` -> choose `ECMAScript 6` for `JavaScript language version`
-  - `Preference` -> `Plugins` -> click `Browse repositories...` -> search `ESLint` -> click `Install plugin`
-  - `Preference` -> `Languages & Frameworks` -> `JavaScript` -> `Code Quality Tools` -> `ESLint` -> check `Enable`
+1. For `Atom`:
 
-4. For `Sublime Text 3`:
-  - if you are using `nvm`, add the following script to `~/.bash_profile` or `~/.zshenv` (check which shell you are using in **SYSTEM DEFAULT (not the same as terminal default)** by `echo $SHELL`)
+    - Install in terminal by `apm install linter linter-eslint`
+    - If you want to use global eslint, `Preference` -> `Packages` -> `linter-eslint` -> check `Use Global ESLint`
 
-    ```bash
-    if hash brew 2> /dev/null && [[ -d "$(brew --prefix nvm)" ]]; then
-      export NVM_DIR="$(brew --prefix nvm)"
-    else
-      export NVM_DIR="$HOME/.nvm"
-    fi
+1. For `PhpStorm`:
 
-    if [[ -s "$NVM_DIR/nvm.sh" ]]; then
-      source "$NVM_DIR/nvm.sh"
-    fi
-    ```
+    - `Languages & Frameworks` -> `JavaScript` -> choose `ECMAScript 6` for `JavaScript language version`
+    - `Preference` -> `Plugins` -> click `Browse repositories...` -> search `ESLint` -> click `Install plugin`
+    - `Preference` -> `Languages & Frameworks` -> `JavaScript` -> `Code Quality Tools` -> `ESLint` -> check `Enable`
 
-    remove the corresponding `nvm` loading script in `.bashrc` or `.zshrc`
+1. For `Sublime Text 3`:
 
-  - Install [Package Control](https://packagecontrol.io/installation)
-  - Install `SublimeLinter` and `SublimeLinter-contrib-eslint` by `Package Control`
-  - Restart `Sublime Text 3`
-  - Restart computer if ESLint is not working
+    - if you are using `nvm`, add the following script to `~/.bash_profile` or `~/.zshenv` (check which shell you are using in **SYSTEM DEFAULT (not the same as terminal default)** by `echo $SHELL`)
 
-5. For `vim` or `neovim`:
-  - `neovim` is preferred over `vim`, as `neovim` can load plugin asynchronously, which highly improve performance when linting with ESLint
-  - Install [benekastah/neomake](https://github.com/benekastah/neomake) by any plugin manager, such as [vim-plug](https://github.com/junegunn/vim-plug)
-  - Add the following lines to `~/.vimrc` (`vim`) or `~/.config/nvim/init.vim` (`neovim`)
+        ```bash
+        if hash brew 2> /dev/null && [[ -d "$(brew --prefix nvm)" ]]; then
+          export NVM_DIR="$(brew --prefix nvm)"
+        else
+          export NVM_DIR="$HOME/.nvm"
+        fi
 
-    ```
-    autocmd BufWrite * :Neomake
+        if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+          source "$NVM_DIR/nvm.sh"
+        fi
+        ```
 
-    let g:neomake_javascript_enabled_makers= ['eslint']
+        remove the corresponding `nvm` loading script in `.bashrc` or `.zshrc`
 
-    " load local eslint in the project root
-    " modified from https://github.com/mtscout6/syntastic-local-eslint.vim
-    let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
-    let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
-    ```
+    - Install [Package Control](https://packagecontrol.io/installation)
+    - Install `SublimeLinter` and `SublimeLinter-contrib-eslint` by `Package Control`
+    - Restart `Sublime Text 3`
+    - Restart computer if ESLint is not working
+
+1. For `vim` or `neovim`:
+
+    - `neovim` is preferred over `vim`, as `neovim` can load plugin asynchronously, which highly improve performance when linting with ESLint
+    - Install [benekastah/neomake](https://github.com/benekastah/neomake) by any plugin manager, such as [vim-plug](https://github.com/junegunn/vim-plug)
+    - Add the following lines to `~/.vimrc` (`vim`) or `~/.config/nvim/init.vim` (`neovim`)
+
+        ```vim
+        autocmd BufWrite * :Neomake
+
+        let g:neomake_javascript_enabled_makers= ['eslint']
+
+        " load local eslint in the project root
+        " modified from https://github.com/mtscout6/syntastic-local-eslint.vim
+        let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
+        let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+        ```
