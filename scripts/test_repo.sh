@@ -14,9 +14,14 @@ rm -rf "$repoName"
 git clone --depth=1 -b "$branch" https://github.com/foray1010/"$repoName"
 cd "$repoName" || exit
 
-rm -rf package.json yarn.lock
+mv package.json package.json.bak
 cp ../../package.json .
-
-yarn install --production --ignore-engines
+yarn install --production --no-lockfile
 yarn link eslint-config-foray1010
-yarn integration_test:lint
+mv package.json.bak package.json
+
+./node_modules/.bin/eslint --rule "{\
+  'import/extensions': 'off',\
+  'import/no-unresolved': 'off',\
+  'node/no-missing-require': 'off'\
+}" .
