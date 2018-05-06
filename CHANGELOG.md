@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.12.0"></a>
+# [6.12.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.11.0...v6.12.0) (2018-05-06)
+
+
+### Bug Fixes
+
+* **package:** update eslint-plugin-babel to version 5.0.0 ([#39](https://github.com/foray1010/eslint-config-foray1010/issues/39)) ([d3b1aa5](https://github.com/foray1010/eslint-config-foray1010/commit/d3b1aa5))
+
+
+### Features
+
+* add preset babel-node ([dda1cea](https://github.com/foray1010/eslint-config-foray1010/commit/dda1cea))
+* use eslint-plugin-node to lint unsupported feature in node ([9662ac5](https://github.com/foray1010/eslint-config-foray1010/commit/9662ac5))
+
+
+
 <a name="6.11.0"></a>
 # [6.11.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.10.0...v6.11.0) (2018-03-30)
 
