@@ -20,8 +20,8 @@ module.exports = {
     ],
     // use `,` for object separator
     'flowtype/object-type-delimiter': 'error',
-    // use `{| key: type |}` to define exact object type, no extra key can pass through
-    'flowtype/require-exact-type': 'error',
+    // allow HOC passthrough and merging object type (exact type doesn't support)
+    'flowtype/require-exact-type': 'off',
     'flowtype/require-valid-file-annotation': ['error', 'never', {annotationStyle: 'line'}],
     'flowtype/semi': ['error', 'never'],
     'flowtype/sort-keys': 'error'
