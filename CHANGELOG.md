@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.12.1"></a>
+## [6.12.1](https://github.com/foray1010/eslint-config-foray1010/compare/v6.12.0...v6.12.1) (2018-05-17)
+
+
+### Bug Fixes
+
+* disable flowtype/require-exact-type ([e008a3a](https://github.com/foray1010/eslint-config-foray1010/commit/e008a3a))
+* disable node/no-unpublished-require ([c2e868b](https://github.com/foray1010/eslint-config-foray1010/commit/c2e868b))
+
+
+
 <a name="6.12.0"></a>
 # [6.12.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.11.0...v6.12.0) (2018-05-06)
 
