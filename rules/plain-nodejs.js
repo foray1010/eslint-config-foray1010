@@ -9,6 +9,9 @@ module.exports = {
   plugins: ['eslint-plugin-node'],
   rules: {
     // backend code needs more dynamic structure
-    'global-require': 'off'
+    'global-require': 'off',
+
+    // avoid throw error even for `private: true` app which doesn't suppose to publish
+    'node/no-unpublished-require': 'off'
   }
 }

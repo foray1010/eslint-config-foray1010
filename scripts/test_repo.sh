@@ -23,6 +23,5 @@ mv package.json.bak package.json
 ./node_modules/.bin/eslint --rule "{\
   'import/extensions': 'off',\
   'import/no-unresolved': 'off',\
-  'node/no-missing-require': 'off',\
-  'node/no-unpublished-require': 'off'\
+  'node/no-missing-require': 'off'\
 }" .
