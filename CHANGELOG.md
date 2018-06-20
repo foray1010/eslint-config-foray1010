@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.13.0"></a>
+# [6.13.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.12.1...v6.13.0) (2018-06-20)
+
+
+### Features
+
+* enable more flowtype rules ([e55bcaf](https://github.com/foray1010/eslint-config-foray1010/commit/e55bcaf))
+
+
+
 <a name="6.12.1"></a>
 ## [6.12.1](https://github.com/foray1010/eslint-config-foray1010/compare/v6.12.0...v6.12.1) (2018-05-17)
 
