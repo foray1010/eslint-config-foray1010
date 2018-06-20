@@ -6,8 +6,12 @@ module.exports = {
   rules: {
     // no trailing comma
     'flowtype/delimiter-dangle': ['error', 'never'],
+    // avoid sort by import-sort
+    'flowtype/newline-after-flow-annotation': ['error', 'always'],
     // no duplicated key
     'flowtype/no-dupe-keys': 'error',
+    // existential type is deprecated
+    'flowtype/no-existential-type': 'error',
     // use boolean instead of Boolean
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-unused-expressions': 'error',
