@@ -28,7 +28,7 @@ module.exports = {
     'flowtype/require-exact-type': 'off',
     'flowtype/require-valid-file-annotation': [
       'error',
-      'never',
+      'always',
       // allow /* flow */ because some packages may require to be the first annotation in the file
       // such as /* @jest-environment: node */
       {annotationStyle: 'none'}
