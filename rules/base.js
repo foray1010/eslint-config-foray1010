@@ -1,6 +1,7 @@
 'use strict'
 
 module.exports = {
+  plugins: ['eslint-plugin-fp'],
   rules: {
     /*++++++++++++++++++
      + Possible Errors +
@@ -107,6 +108,22 @@ module.exports = {
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
+    // mutation is evil
+    'fp/no-mutation': [
+      'error',
+      {
+        allowThis: true,
+        commonjs: true,
+        exceptions: [
+          // except following react static properties that are used by functional components
+          {property: 'childContextTypes'},
+          {property: 'contextTypes'},
+          {property: 'defaultProps'},
+          {property: 'propTypes'}
+        ]
+      }
+    ],
+
     // we need it for making module loader
     'import/no-dynamic-require': 'off',
     // we need to import devDependencies in test files
