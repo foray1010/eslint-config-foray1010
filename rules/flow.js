@@ -26,7 +26,13 @@ module.exports = {
     'flowtype/object-type-delimiter': 'error',
     // allow HOC passthrough and merging object type (exact type doesn't support)
     'flowtype/require-exact-type': 'off',
-    'flowtype/require-valid-file-annotation': ['error', 'never', {annotationStyle: 'line'}],
+    'flowtype/require-valid-file-annotation': [
+      'error',
+      'never',
+      // allow /* flow */ because some packages may require to be the first annotation in the file
+      // such as /* @jest-environment: node */
+      {annotationStyle: 'none'}
+    ],
     'flowtype/semi': ['error', 'never'],
     'flowtype/sort-keys': 'error'
   }
