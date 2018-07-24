@@ -5,7 +5,10 @@
     "node": ">=6.9"
   },
   "description": "my own ESLint config",
-  "keywords": ["config", "eslint"],
+  "keywords": [
+    "config",
+    "eslint"
+  ],
   "private": false,
   "license": "MIT",
   "author": "foray1010",
@@ -19,20 +22,34 @@
     "lint": "eslint .",
     "precommit": "lint-staged",
     "test": "npm-run-all -p test:*",
-    "test:didyoumean2": "./scripts/test_repo.sh didyoumean2 2.x",
-    "test:ignore-sync": "./scripts/test_repo.sh ignore-sync",
-    "test:Popup-my-Bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks rewrite-with-redux-saga"
+    "test:pmb": "./scripts/test_repo.sh Popup-my-Bookmarks rewrite-with-redux-saga"
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
-    "ignore": ["CHANGELOG.md"],
+    "ignore": [
+      "CHANGELOG.md"
+    ],
     "linters": {
-      "*.js": ["prettier-eslint --write", "eslint --fix", "git add"],
-      "*.json": ["prettier-eslint --write", "git add"],
-      "*.md": ["markdownlint"],
-      "*ignore-sync": ["ignore-sync", "git add"]
+      "*.js": [
+        "prettier-eslint --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "*.json": [
+        "prettier-eslint --write",
+        "git add"
+      ],
+      "*.md": [
+        "markdownlint"
+      ],
+      "*ignore-sync": [
+        "ignore-sync",
+        "git add"
+      ]
     }
   },
   "peerDependencies": {
