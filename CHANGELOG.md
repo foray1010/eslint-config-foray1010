@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.14.0"></a>
+# [6.14.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.12.1...v6.14.0) (2018-07-24)
+
+
+### Bug Fixes
+
+* allow block flow annotation ([0375c40](https://github.com/foray1010/eslint-config-foray1010/commit/0375c40))
+
+
+### Features
+
+* do not allow mutation ([998f8be](https://github.com/foray1010/eslint-config-foray1010/commit/998f8be))
+* enable more flowtype rules ([e55bcaf](https://github.com/foray1010/eslint-config-foray1010/commit/e55bcaf))
+* force all files must have flow annotation ([98e197c](https://github.com/foray1010/eslint-config-foray1010/commit/98e197c))
+* upgrade to eslint-config-airbnb 17.0.0 ([0966b64](https://github.com/foray1010/eslint-config-foray1010/commit/0966b64))
+
+
+
 <a name="6.13.0"></a>
 # [6.13.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.12.1...v6.13.0) (2018-06-20)
 
