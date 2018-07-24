@@ -13,7 +13,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* do not allow mutation ([998f8be](https://github.com/foray1010/eslint-config-foray1010/commit/998f8be))
 * enable more flowtype rules ([e55bcaf](https://github.com/foray1010/eslint-config-foray1010/commit/e55bcaf))
 * force all files must have flow annotation ([98e197c](https://github.com/foray1010/eslint-config-foray1010/commit/98e197c))
 * upgrade to eslint-config-airbnb 17.0.0 ([0966b64](https://github.com/foray1010/eslint-config-foray1010/commit/0966b64))
