@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.14.1"></a>
+## [6.14.1](https://github.com/foray1010/eslint-config-foray1010/compare/v6.14.0...v6.14.1) (2018-07-24)
+
+
+### Bug Fixes
+
+* move eslint-plugin-fp from devDependencies to dependencies ([a0a8c93](https://github.com/foray1010/eslint-config-foray1010/commit/a0a8c93))
+
+
+
 <a name="6.14.0"></a>
 # [6.14.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.12.1...v6.14.0) (2018-07-24)
 
