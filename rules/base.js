@@ -109,6 +109,7 @@ module.exports = {
      + Other plugins +
      ++++++++++++++++*/
     // mutation is evil
+    /* disable for a while since it takes time to migrate
     'fp/no-mutation': [
       'error',
       {
@@ -123,6 +124,7 @@ module.exports = {
         ]
       }
     ],
+    */
 
     // we need it for making module loader
     'import/no-dynamic-require': 'off',
