@@ -24,6 +24,6 @@ module.exports = {
   rules: Object.assign({}, migratedRules, {
     // this rule depends on package.json's node.engines field, but the code is
     // not running directly by that engine but transpile to compatible syntax
-    'node/no-unsupported-features': 'off'
+    'node/no-unsupported-features/es-syntax': 'off'
   })
 }
