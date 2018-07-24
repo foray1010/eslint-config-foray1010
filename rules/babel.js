@@ -10,11 +10,10 @@ const baseConfig = extendsConfig({
 // using eslint-plugin-babel to deal with these rules
 const migrateRuleNames = ['new-cap', 'no-invalid-this', 'object-curly-spacing', 'semi']
 const migratedRules = migrateRuleNames.reduce(
-  (acc, migrateRuleName) =>
-    Object.assign({}, acc, {
-      [migrateRuleName]: 'off',
-      [`babel/${migrateRuleName}`]: baseConfig.rules[migrateRuleName]
-    }),
+  (acc, migrateRuleName) => Object.assign({}, acc, {
+    [migrateRuleName]: 'off',
+    [`babel/${migrateRuleName}`]: baseConfig.rules[migrateRuleName]
+  }),
   {}
 )
 

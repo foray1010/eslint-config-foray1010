@@ -65,6 +65,10 @@ module.exports = {
     'func-names': ['error', 'as-needed'],
     // don't force to not break newline within function paren
     'function-paren-newline': ['error', 'consistent'],
+    // may break `max-len`
+    'implicit-arrow-linebreak': 'off',
+    // we may omit linebreak for grouping logic
+    'lines-between-class-members': 'off',
     // some codes, such as `new Bunyan.createLogger`, cannot pass, so disable it
     'new-cap': 'off',
     // we don't want to remove support of `continue` in loop
@@ -77,6 +81,8 @@ module.exports = {
     'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     // we use underscore prefix to show if it is a private variable
     'no-underscore-dangle': 'off',
+    // let prettier handles it with `max-len`
+    'object-curly-newline': 'off',
     // prefer no space between curly bracket
     'object-curly-spacing': ['error', 'never'],
     // prefer putting operator at the end of line
