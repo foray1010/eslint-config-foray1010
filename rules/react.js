@@ -23,6 +23,9 @@ module.exports = extendsConfig({
     // so that developer can safety assume the prop always exist
     'react/default-props-match-prop-types': ['error', {allowRequiredDefaults: true}],
 
+    // if the variables only used once, it wastes time to destructure it
+    'react/destructuring-assignment': 'off',
+
     // allow 'object', it is very annoying to define the object structure every time
     'react/forbid-prop-types': [
       'error',
@@ -43,6 +46,9 @@ module.exports = extendsConfig({
     'react/no-did-mount-set-state': 'off',
     'react/no-did-update-set-state': 'off',
 
+    // one liner of `<div>{var}</div>` looks more simple
+    'react/jsx-one-expression-per-line': 'off',
+
     'react/prefer-stateless-function': [
       'error',
       {
@@ -53,6 +59,14 @@ module.exports = extendsConfig({
 
     // React.PropTypes doesn't allow to use `null` with `isRequired`
     // which break many use case, we use `null` to represent that value is not exist yet
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
+
+    // use default sort-comp sorting
+    'react/sort-comp': [
+      'error',
+      {
+        order: ['type-annotations', 'static-methods', 'lifecycle', 'everything-else', 'render']
+      }
+    ]
   }
 })
