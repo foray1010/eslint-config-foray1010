@@ -71,6 +71,22 @@ module.exports = {
     'lines-between-class-members': 'off',
     // some codes, such as `new Bunyan.createLogger`, cannot pass, so disable it
     'new-cap': 'off',
+    // nested code is difficult to understand
+    'max-depth': [
+      'error',
+      {
+        max: 2
+      }
+    ],
+    // reject large file, encourage refactor to smaller components
+    'max-lines': [
+      'error',
+      {
+        max: 200,
+        skipBlankLines: true,
+        skipComments: true
+      }
+    ],
     // we don't want to remove support of `continue` in loop
     'no-continue': 'off',
     // disable it allow better readability
