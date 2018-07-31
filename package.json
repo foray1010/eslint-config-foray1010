@@ -24,34 +24,6 @@
     "test": "npm-run-all -p test:*",
     "test:pmb": "./scripts/test_repo.sh Popup-my-Bookmarks"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "ignore": [
-      "CHANGELOG.md"
-    ],
-    "linters": {
-      "*.js": [
-        "prettier-eslint --write",
-        "eslint --fix",
-        "git add"
-      ],
-      "*.json": [
-        "prettier-eslint --write",
-        "git add"
-      ],
-      "*.md": [
-        "markdownlint"
-      ],
-      "*ignore-sync": [
-        "ignore-sync",
-        "git add"
-      ]
-    }
-  },
   "peerDependencies": {
     "eslint": "^5.2.0"
   },
