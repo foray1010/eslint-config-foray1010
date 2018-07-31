@@ -22,7 +22,7 @@
     "lint": "eslint .",
     "precommit": "lint-staged",
     "test": "npm-run-all -p test:*",
-    "test:pmb": "./scripts/test_repo.sh Popup-my-Bookmarks rewrite-with-redux-saga"
+    "test:pmb": "./scripts/test_repo.sh Popup-my-Bookmarks"
   },
   "commitlint": {
     "extends": [
