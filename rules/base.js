@@ -52,11 +52,13 @@ module.exports = {
     // we may need to use the function before we define it, check `js hoisting`
     'no-use-before-define': ['error', {functions: false, classes: false, variables: false}],
 
-    /*++++++++++
-     + Node.js +
-     ++++++++++*/
+    /*+++++++++++++++++++++++
+     + Node.js and CommonJS +
+     +++++++++++++++++++++++*/
     // to group require together for better readability
     'no-mixed-requires': 'error',
+    // disable for manually provide exit code for async cli
+    'no-process-exit': 'off',
 
     /*+++++++++++++++++++
      + Stylistic Issues +
