@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.15.0"></a>
+# [6.15.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.14.1...v6.15.0) (2018-08-10)
+
+
+### Bug Fixes
+
+* disable no-process-exit ([fe202d6](https://github.com/foray1010/eslint-config-foray1010/commit/fe202d6))
+* require eslint 5 ([4248263](https://github.com/foray1010/eslint-config-foray1010/commit/4248263))
+
+
+### Features
+
+* enable max-depth & max-lines ([0e2381c](https://github.com/foray1010/eslint-config-foray1010/commit/0e2381c))
+
+
+
 <a name="6.14.1"></a>
 ## [6.14.1](https://github.com/foray1010/eslint-config-foray1010/compare/v6.14.0...v6.14.1) (2018-07-24)
 
