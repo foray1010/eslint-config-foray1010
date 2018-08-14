@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.16.0"></a>
+# [6.16.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.15.0...v6.16.0) (2018-08-14)
+
+
+### Bug Fixes
+
+* allow 300 lines files ([2c61a9f](https://github.com/foray1010/eslint-config-foray1010/commit/2c61a9f))
+
+
+### Features
+
+* upgrade to eslint-config-airbnb 17.1.0 ([8412bed](https://github.com/foray1010/eslint-config-foray1010/commit/8412bed))
+
+
+
 <a name="6.15.0"></a>
 # [6.15.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.14.1...v6.15.0) (2018-08-10)
 
