@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.17.0"></a>
+# [6.17.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.16.0...v6.17.0) (2018-09-20)
+
+
+### Features
+
+* support typescript ([63a1f49](https://github.com/foray1010/eslint-config-foray1010/commit/63a1f49))
+
+
+
 <a name="6.16.0"></a>
 # [6.16.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.15.0...v6.16.0) (2018-08-14)
 
