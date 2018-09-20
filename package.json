@@ -39,7 +39,9 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-ramda": "^2.5.0",
-    "eslint-plugin-react": "^7.11.0"
+    "eslint-plugin-react": "^7.11.0",
+    "eslint-plugin-typescript": "^0.12.0",
+    "typescript-eslint-parser": "^18.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",

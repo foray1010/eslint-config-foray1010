@@ -7,10 +7,10 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.mjs', '.js', '.json']
+        extensions: ['.mjs', '.js', '.ts', '.tsx', '.json']
       }
     },
-    'import/extensions': ['.mjs', '.js'],
+    'import/extensions': ['.mjs', '.js', '.ts', '.tsx'],
     react: {
       pragma: 'createElement'
     }
