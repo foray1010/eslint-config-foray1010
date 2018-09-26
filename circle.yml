@@ -2,18 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      - image: "circleci/node:8"
+      - image: 'circleci/node:8'
     steps:
-      - "checkout"
-      -
-        restore_cache:
-          key: "yarn-{{ .Branch }}-{{ checksum \"yarn.lock\" }}"
-      - run: "yarn install --ignore-engines"
-      - run: "git checkout -- node_modules/eslint-config-foray1010"
-      - run: "yarn lint"
-      - run: "yarn test"
-      -
-        save_cache:
-          key: "yarn-{{ .Branch }}-{{ checksum \"yarn.lock\" }}"
+      - 'checkout'
+      - restore_cache:
+          key: 'yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}'
+      - run: 'yarn install --ignore-engines'
+      - run: 'git checkout -- node_modules/eslint-config-foray1010'
+      - run: 'yarn lint'
+      - run: 'yarn test'
+      - save_cache:
+          key: 'yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}'
           paths:
-            - "~/.yarn-cache"
+            - '~/.yarn-cache'
