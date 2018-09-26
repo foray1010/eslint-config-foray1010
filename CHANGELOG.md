@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.17.1"></a>
+## [6.17.1](https://github.com/foray1010/eslint-config-foray1010/compare/v6.17.0...v6.17.1) (2018-09-26)
+
+
+### Bug Fixes
+
+* **package:** update typescript-eslint-parser to version 19.0.1 ([cf97f13](https://github.com/foray1010/eslint-config-foray1010/commit/cf97f13))
+* allow 3 level nested scope ([edbfbe1](https://github.com/foray1010/eslint-config-foray1010/commit/edbfbe1))
+
+
+
 <a name="6.17.0"></a>
 # [6.17.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.16.0...v6.17.0) (2018-09-20)
 
