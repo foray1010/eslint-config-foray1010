@@ -77,7 +77,7 @@ module.exports = {
     'max-depth': [
       'error',
       {
-        max: 2
+        max: 3
       }
     ],
     // reject large file, encourage refactor to smaller components
