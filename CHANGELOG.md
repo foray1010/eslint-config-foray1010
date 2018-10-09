@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.17.2"></a>
+## [6.17.2](https://github.com/foray1010/eslint-config-foray1010/compare/v6.17.1...v6.17.2) (2018-10-09)
+
+
+### Bug Fixes
+
+* **package:** update typescript-eslint-parser to version 20.0.0 ([37ed17e](https://github.com/foray1010/eslint-config-foray1010/commit/37ed17e))
+* upgrade babel-eslint to 10 ([180802e](https://github.com/foray1010/eslint-config-foray1010/commit/180802e))
+
+
+
 <a name="6.17.1"></a>
 ## [6.17.1](https://github.com/foray1010/eslint-config-foray1010/compare/v6.17.0...v6.17.1) (2018-09-26)
 
