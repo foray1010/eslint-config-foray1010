@@ -39,7 +39,7 @@
     "eslint-plugin-ramda": "^2.5.0",
     "eslint-plugin-react": "^7.11.0",
     "eslint-plugin-typescript": "^0.13.0",
-    "typescript-eslint-parser": "^20.0.0"
+    "typescript-eslint-parser": "^21.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
