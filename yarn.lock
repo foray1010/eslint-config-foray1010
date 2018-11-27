@@ -3998,9 +3998,9 @@ typescript-eslint-parser@^16.0.0:
     semver "5.5.0"
 
 typescript-eslint-parser@^21.0.0:
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-21.0.0.tgz#fcac9e07f83330c7d8e6902bdae0bfdcdbea6995"
-  integrity sha512-XYHF9r3UTt5GHkE2CSaJ1YtonCL8h4LmjwqabekF05gS/Kv/tT6jQhlrbmLmofHe3Sg+ITnUbT47cIJ7Gy3YJw==
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-21.0.1.tgz#710ea628a72144e1ec3a1d6b9f5b2b0a5a520e04"
+  integrity sha512-rdtAzg0eTTv/+YRLBJZBAAuOHHyYiElE2HdkaOGf9kKGce811zP3JRPzDybCJQamdsxyEsMe6CyIk2JCEnw/4g==
   dependencies:
     eslint-scope "^4.0.0"
     eslint-visitor-keys "^1.0.0"
