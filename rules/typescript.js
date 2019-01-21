@@ -1,12 +1,12 @@
 'use strict'
 
 module.exports = {
-  parser: '@typescript-eslint/eslint-plugin/parser',
-  plugins: ['@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint/eslint-plugin'],
   extends: ['plugin:@typescript-eslint/recommended'],
   settings: {
     'import/parsers': {
-      '@typescript-eslint/eslint-plugin/parser': ['.ts', '.tsx']
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     }
   },
   rules: {
