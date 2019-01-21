@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.19.0"></a>
+# [6.19.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.18.0...v6.19.0) (2019-01-21)
+
+
+### Features
+
+* upgrade typescript eslint plugin and parser ([18cc658](https://github.com/foray1010/eslint-config-foray1010/commit/18cc658))
+
+
+
 <a name="6.18.0"></a>
 # [6.18.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.17.4...v6.18.0) (2019-01-20)
 
