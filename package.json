@@ -17,6 +17,7 @@
   "bugs": "https://github.com/foray1010/eslint-config-foray1010/issues",
   "main": "index.js",
   "scripts": {
+    "ci": "yarn lint && yarn test",
     "ignore-sync": "ignore-sync",
     "lint": "eslint .",
     "test": "npm-run-all -p test:*",
