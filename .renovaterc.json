@@ -1,0 +1,9 @@
+{
+  "extends": ["config:base", ":assignAndReview(foray1010)", ":automergeMinor"],
+  "node": {
+    "supportPolicy": ["lts_active"]
+  },
+  "semanticCommits": true,
+  "semanticCommitType": "chore",
+  "prCreation": "not-pending"
+}
