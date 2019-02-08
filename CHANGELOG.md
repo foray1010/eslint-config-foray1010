@@ -2,6 +2,68 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# 7.0.0 (2019-02-08)
+
+
+### Bug Fixes
+
+* **package:** update babel-eslint to version 8.0.0 ([#31](https://github.com/foray1010/eslint-config-foray1010/issues/31)) ([2357451](https://github.com/foray1010/eslint-config-foray1010/commit/2357451))
+* allow block flow annotation ([dec5c8d](https://github.com/foray1010/eslint-config-foray1010/commit/dec5c8d))
+* **package:** update eslint-config-airbnb to version 14.1.0 ([#20](https://github.com/foray1010/eslint-config-foray1010/issues/20)) ([3cafac2](https://github.com/foray1010/eslint-config-foray1010/commit/3cafac2))
+* **package:** update eslint-config-airbnb to version 16.0.0 ([#32](https://github.com/foray1010/eslint-config-foray1010/issues/32)) ([8deb582](https://github.com/foray1010/eslint-config-foray1010/commit/8deb582))
+* **package:** update eslint-plugin-babel to version 5.0.0 ([#39](https://github.com/foray1010/eslint-config-foray1010/issues/39)) ([cd6cc21](https://github.com/foray1010/eslint-config-foray1010/commit/cd6cc21))
+* **package:** update eslint-plugin-flowtype to version 3.1.1 ([415ce7a](https://github.com/foray1010/eslint-config-foray1010/commit/415ce7a)), closes [#55](https://github.com/foray1010/eslint-config-foray1010/issues/55)
+* **package:** update eslint-plugin-node to version 8.0.0 ([4af2666](https://github.com/foray1010/eslint-config-foray1010/commit/4af2666))
+* **package:** update typescript-eslint-parser to version 19.0.1 ([8aa5a7f](https://github.com/foray1010/eslint-config-foray1010/commit/8aa5a7f))
+* **package:** update typescript-eslint-parser to version 20.0.0 ([9f27ed3](https://github.com/foray1010/eslint-config-foray1010/commit/9f27ed3))
+* disable flowtype/require-exact-type ([88b2e02](https://github.com/foray1010/eslint-config-foray1010/commit/88b2e02))
+* **package:** upgrade eslint-plugin-jest ([6da0fa0](https://github.com/foray1010/eslint-config-foray1010/commit/6da0fa0))
+* allow 3 level nested scope ([b1ae00b](https://github.com/foray1010/eslint-config-foray1010/commit/b1ae00b))
+* allow 300 lines files ([df38b5a](https://github.com/foray1010/eslint-config-foray1010/commit/df38b5a))
+* browser env setting should be located in rules/frontend ([124cd9e](https://github.com/foray1010/eslint-config-foray1010/commit/124cd9e))
+* cannot run on vscode because its node version is <=7.9 ([882ba5a](https://github.com/foray1010/eslint-config-foray1010/commit/882ba5a))
+* disable no-process-exit ([1353cba](https://github.com/foray1010/eslint-config-foray1010/commit/1353cba))
+* disable node/no-unpublished-require ([a09b8db](https://github.com/foray1010/eslint-config-foray1010/commit/a09b8db))
+* move eslint-plugin-fp from devDependencies to dependencies ([1ec499c](https://github.com/foray1010/eslint-config-foray1010/commit/1ec499c))
+* remove all jsx-a11y related rules ([726a255](https://github.com/foray1010/eslint-config-foray1010/commit/726a255))
+* require eslint 5 ([0e3a3ef](https://github.com/foray1010/eslint-config-foray1010/commit/0e3a3ef))
+* strict mode rule should be located in rules/es-module ([fbd5e10](https://github.com/foray1010/eslint-config-foray1010/commit/fbd5e10))
+* upgrade babel-eslint to 10 ([2043229](https://github.com/foray1010/eslint-config-foray1010/commit/2043229))
+* use airbnb/base to generate babel rules instead ([3bc09dc](https://github.com/foray1010/eslint-config-foray1010/commit/3bc09dc))
+
+
+### Features
+
+* add flow to react preset ([057c6bb](https://github.com/foray1010/eslint-config-foray1010/commit/057c6bb))
+* add lint rules for react hook ([db0edd7](https://github.com/foray1010/eslint-config-foray1010/commit/db0edd7))
+* add preset babel-node ([a821914](https://github.com/foray1010/eslint-config-foray1010/commit/a821914))
+* allow using console such as console.error ([d88148f](https://github.com/foray1010/eslint-config-foray1010/commit/d88148f))
+* do not allow mutation ([2f82831](https://github.com/foray1010/eslint-config-foray1010/commit/2f82831))
+* do not allow using PureComponent if it contains just render method ([b5acc2d](https://github.com/foray1010/eslint-config-foray1010/commit/b5acc2d))
+* enable max-depth & max-lines ([dc4740c](https://github.com/foray1010/eslint-config-foray1010/commit/dc4740c))
+* enable more flowtype rules ([43dd847](https://github.com/foray1010/eslint-config-foray1010/commit/43dd847))
+* enable more ramda rules ([c29fa1e](https://github.com/foray1010/eslint-config-foray1010/commit/c29fa1e))
+* force all files must have flow annotation ([ada6510](https://github.com/foray1010/eslint-config-foray1010/commit/ada6510))
+* remove jsx-a11y ([0279072](https://github.com/foray1010/eslint-config-foray1010/commit/0279072))
+* support .mjs ([36fe0d1](https://github.com/foray1010/eslint-config-foray1010/commit/36fe0d1))
+* support typescript ([4ea5699](https://github.com/foray1010/eslint-config-foray1010/commit/4ea5699))
+* ts/tsx extension has highest priority in import/resolver ([fe90241](https://github.com/foray1010/eslint-config-foray1010/commit/fe90241))
+* **flowtype:** disable no-flow-fix-me-comments, no-mutable-array and require-exact-type ([3171a46](https://github.com/foray1010/eslint-config-foray1010/commit/3171a46))
+* upgrade to eslint-config-airbnb 17.0.0 ([c9b4e4b](https://github.com/foray1010/eslint-config-foray1010/commit/c9b4e4b))
+* upgrade to eslint-config-airbnb 17.1.0 ([70fb064](https://github.com/foray1010/eslint-config-foray1010/commit/70fb064))
+* upgrade typescript eslint plugin and parser ([cca461e](https://github.com/foray1010/eslint-config-foray1010/commit/cca461e))
+* use [@typescript-eslint](https://github.com/typescript-eslint) as typescript's eslint plugin and parser ([22c81b7](https://github.com/foray1010/eslint-config-foray1010/commit/22c81b7))
+* use eslint-plugin-node to lint unsupported feature in node ([947a661](https://github.com/foray1010/eslint-config-foray1010/commit/947a661))
+* use React.createElement as pragma ([ea7f6d2](https://github.com/foray1010/eslint-config-foray1010/commit/ea7f6d2))
+
+
+### BREAKING CHANGES
+
+* `import {createElement} from 'react'` is no longer valid
+
+
+
 <a name="6.19.0"></a>
 # [6.19.0](https://github.com/foray1010/eslint-config-foray1010/compare/v6.18.0...v6.19.0) (2019-01-21)
 
