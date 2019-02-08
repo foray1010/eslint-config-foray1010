@@ -4,7 +4,7 @@ testFolder="integration_tests"
 repoName=$1
 branch="${2:-master}"
 
-yarn install
+yarn install --frozen-lockfile
 yarn link
 
 mkdir -p "$testFolder"
@@ -20,7 +20,7 @@ yarn install --production --no-lockfile
 yarn link eslint-config-foray1010
 mv package.json.bak package.json
 
-./node_modules/.bin/eslint --rule "{\
+./node_modules/.bin/eslint --ext js,ts,tsx --rule "{\
   'import/extensions': 'off',\
   'import/no-unresolved': 'off',\
   'node/no-missing-require': 'off'\
