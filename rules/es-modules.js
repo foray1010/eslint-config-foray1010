@@ -10,10 +10,7 @@ module.exports = {
         extensions: ['.mjs', '.js', '.ts', '.tsx', '.json']
       }
     },
-    'import/extensions': ['.mjs', '.js', '.ts', '.tsx'],
-    react: {
-      pragma: 'createElement'
-    }
+    'import/extensions': ['.mjs', '.js', '.ts', '.tsx']
   },
   rules: {
     /*++++++++++++++

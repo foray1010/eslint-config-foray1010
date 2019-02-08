@@ -5,11 +5,6 @@ const extendsConfig = require('../lib/extendsConfig')
 module.exports = extendsConfig({
   extends: ['eslint-config-airbnb/rules/react'],
   plugins: ['eslint-plugin-react-hooks'],
-  settings: {
-    react: {
-      pragma: 'createElement'
-    }
-  },
   rules: {
     /*+++++++++++++++++++
      + Stylistic Issues +
