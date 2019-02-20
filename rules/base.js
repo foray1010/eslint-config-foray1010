@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  plugins: ['eslint-plugin-fp'],
+  plugins: ['eslint-plugin-html', 'eslint-plugin-fp'],
   rules: {
     /*++++++++++++++++++
      + Possible Errors +
