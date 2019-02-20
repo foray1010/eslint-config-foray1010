@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.1.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.0.0...v7.1.0) (2019-02-20)
+
+
+### Features
+
+* support linting inside html ([1a81a88](https://github.com/foray1010/eslint-config-foray1010/commit/1a81a88))
+
+
+
 <a name="7.0.0"></a>
 # 7.0.0 (2019-02-08)
 
