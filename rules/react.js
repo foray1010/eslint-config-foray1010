@@ -34,7 +34,7 @@ module.exports = extendsConfig({
     'react/jsx-filename-extension': [
       'error',
       {
-        extensions: ['.mjs', '.js']
+        extensions: ['.tsx', '.mjs', '.js']
       }
     ],
 
