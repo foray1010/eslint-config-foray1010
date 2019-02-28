@@ -2,12 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [7.1.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.0.0...v7.1.0) (2019-02-20)
+## [7.1.1](https://github.com/foray1010/eslint-config-foray1010/compare/v7.1.0...v7.1.1) (2019-02-28)
 
 
-### Features
+### Bug Fixes
 
-* support linting inside html ([1a81a88](https://github.com/foray1010/eslint-config-foray1010/commit/1a81a88))
+* fix errors when running on typescript files ([c02d5b1](https://github.com/foray1010/eslint-config-foray1010/commit/c02d5b1))
 
 
 
