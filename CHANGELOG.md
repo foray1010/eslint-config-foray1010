@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.2](https://github.com/foray1010/eslint-config-foray1010/compare/v7.1.1...v7.1.2) (2019-02-28)
+
+
+### Bug Fixes
+
+* allow using jsx in .tsx ([ce90152](https://github.com/foray1010/eslint-config-foray1010/commit/ce90152))
+* disable @typescript-eslint/explicit-function-return-type ([69bd933](https://github.com/foray1010/eslint-config-foray1010/commit/69bd933))
+
+
+
 ## [7.1.1](https://github.com/foray1010/eslint-config-foray1010/compare/v7.1.0...v7.1.1) (2019-02-28)
 
 
