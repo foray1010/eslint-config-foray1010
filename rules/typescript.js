@@ -16,6 +16,7 @@ module.exports = {
 
     '@typescript-eslint/array-type': ['error', 'generic'],
     '@typescript-eslint/camelcase': ['error', {properties: 'never'}],
+    '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/member-delimiter-style': [
       'error',
