@@ -4,14 +4,6 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.ts', '.tsx', '.mjs', '.js', '.json']
-      }
-    },
-    'import/extensions': ['.ts', '.tsx', '.mjs', '.js']
-  },
   rules: {
     /*++++++++++++++
      + Strict Mode +

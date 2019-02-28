@@ -2,6 +2,14 @@
 
 module.exports = {
   plugins: ['eslint-plugin-html', 'eslint-plugin-fp'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx', '.mjs', '.js', '.json']
+      }
+    },
+    'import/extensions': ['.ts', '.tsx', '.mjs', '.js']
+  },
   rules: {
     /*++++++++++++++++++
      + Possible Errors +
@@ -150,6 +158,16 @@ module.exports = {
     ],
     */
 
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ],
     // we need it for making module loader
     'import/no-dynamic-require': 'off',
     // we need to import devDependencies in test files

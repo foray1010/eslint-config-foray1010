@@ -10,6 +10,10 @@ module.exports = {
     }
   },
   rules: {
+    // this rule depends on package.json's node.engines field, but the code is
+    // not running directly by that engine but transpile to compatible syntax
+    'node/no-unsupported-features/es-syntax': 'off',
+
     '@typescript-eslint/array-type': ['error', 'generic'],
     '@typescript-eslint/camelcase': ['error', {properties: 'never'}],
     '@typescript-eslint/indent': ['error', 2],
