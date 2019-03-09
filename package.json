@@ -21,7 +21,8 @@
     "ignore-sync": "ignore-sync",
     "lint": "eslint .",
     "test": "npm-run-all -p test:*",
-    "test:pmb": "./scripts/test_repo.sh Popup-my-Bookmarks"
+    "test:pmb": "./scripts/test_repo.sh Popup-my-Bookmarks",
+    "test:dym": "./scripts/test_repo.sh didyoumean2"
   },
   "peerDependencies": {
     "eslint": "^5.3.0"
