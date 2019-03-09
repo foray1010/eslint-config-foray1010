@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.2.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.1.2...v7.2.0) (2019-03-09)
+
+
+### Features
+
+* sync typescript config with base config ([e6f66cd](https://github.com/foray1010/eslint-config-foray1010/commit/e6f66cd))
+* **rules:** add react-hooks/exhaustive-deps ([fd2209a](https://github.com/foray1010/eslint-config-foray1010/commit/fd2209a))
+
+
+
 ## [7.1.2](https://github.com/foray1010/eslint-config-foray1010/compare/v7.1.1...v7.1.2) (2019-02-28)
 
 

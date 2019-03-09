@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-foray1010",
-  "version": "7.1.2",
+  "version": "7.2.0",
   "engines": {
     "node": ">=6.9"
   },
