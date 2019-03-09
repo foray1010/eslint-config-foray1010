@@ -29,8 +29,27 @@ module.exports = {
         }
       }
     ],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: true
+      }
+    ],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        typedefs: true
+      }
+    ],
 
     // not working for types
-    'import/named': 'off'
+    'import/named': 'off',
+    // not working for unknown reason
+    'import/no-unresolved': 'off'
   }
 }
