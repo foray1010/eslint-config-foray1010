@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.3.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.2.0...v7.3.0) (2019-04-28)
+
+
+### Features
+
+* use eslint-plugin-redux-saga ([b34a854](https://github.com/foray1010/eslint-config-foray1010/commit/b34a854))
+
+
+
 # [7.2.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.1.2...v7.2.0) (2019-03-09)
 
 
