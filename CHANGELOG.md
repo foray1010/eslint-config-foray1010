@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.3.2](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.1...v7.3.2) (2019-07-11)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-config-airbnb to v17.1.1 ([#160](https://github.com/foray1010/eslint-config-foray1010/issues/160)) ([80b569b](https://github.com/foray1010/eslint-config-foray1010/commit/80b569b))
+- **deps:** update dependency eslint-plugin-html to v6 ([#155](https://github.com/foray1010/eslint-config-foray1010/issues/155)) ([4b6ad1e](https://github.com/foray1010/eslint-config-foray1010/commit/4b6ad1e))
+
 ### [7.3.1](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.0...v7.3.1) (2019-07-11)
 
 ### Bug Fixes
