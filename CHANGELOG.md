@@ -1,6 +1,12 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [7.3.1](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.0...v7.3.1) (2019-07-11)
+
+### Bug Fixes
+
+- cannot use typescript preset ([b33b9e7](https://github.com/foray1010/eslint-config-foray1010/commit/b33b9e7))
 
 ## [7.3.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.2.0...v7.3.0) (2019-04-28)
 
