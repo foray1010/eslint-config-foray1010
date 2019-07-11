@@ -1,8 +1,8 @@
 'use strict'
 
-const extendsConfig = require('../lib/extendsConfig')
+const resolveConfig = require('../lib/resolveConfig')
 
-const baseConfig = extendsConfig({
+const baseConfig = resolveConfig({
   extends: ['eslint-config-airbnb/base', 'eslint-config-foray1010/rules/base']
 })
 
@@ -10,10 +10,11 @@ const baseConfig = extendsConfig({
 // using eslint-plugin-babel to deal with these rules
 const migrateRuleNames = ['new-cap', 'no-invalid-this', 'object-curly-spacing', 'semi']
 const migratedRules = migrateRuleNames.reduce(
-  (acc, migrateRuleName) => Object.assign({}, acc, {
-    [migrateRuleName]: 'off',
-    [`babel/${migrateRuleName}`]: baseConfig.rules[migrateRuleName]
-  }),
+  (acc, migrateRuleName) =>
+    Object.assign({}, acc, {
+      [migrateRuleName]: 'off',
+      [`babel/${migrateRuleName}`]: baseConfig.rules[migrateRuleName]
+    }),
   {}
 )
 

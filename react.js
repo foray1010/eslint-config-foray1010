@@ -1,8 +1,6 @@
 'use strict'
 
-const extendsConfig = require('./lib/extendsConfig')
-
-module.exports = extendsConfig({
+module.exports = {
   extends: [
     'eslint-config-airbnb/base',
     'eslint-config-foray1010/rules/base',
@@ -13,5 +11,5 @@ module.exports = extendsConfig({
     'eslint-config-foray1010/rules/babel',
     'eslint-config-foray1010/rules/flow',
     'eslint-config-foray1010/rules/ramda'
-  ]
-})
+  ].map(require.resolve)
+}

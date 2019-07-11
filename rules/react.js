@@ -1,8 +1,6 @@
 'use strict'
 
-const extendsConfig = require('../lib/extendsConfig')
-
-module.exports = extendsConfig({
+module.exports = {
   extends: ['eslint-config-airbnb/rules/react', 'plugin:redux-saga/recommended'],
   plugins: ['eslint-plugin-react-hooks', 'eslint-plugin-redux-saga'],
   rules: {
@@ -68,4 +66,4 @@ module.exports = extendsConfig({
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error'
   }
-})
+}
