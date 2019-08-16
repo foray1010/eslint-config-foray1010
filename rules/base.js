@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  plugins: ['eslint-plugin-html', 'eslint-plugin-fp'],
+  plugins: ['eslint-plugin-html'],
   settings: {
     'import/resolver': {
       node: {
@@ -140,24 +140,6 @@ module.exports = {
     /*++++++++++++++++
      + Other plugins +
      ++++++++++++++++*/
-    // mutation is evil
-    /* disable for a while since it takes time to migrate
-    'fp/no-mutation': [
-      'error',
-      {
-        allowThis: true,
-        commonjs: true,
-        exceptions: [
-          // except following react static properties that are used by functional components
-          {property: 'childContextTypes'},
-          {property: 'contextTypes'},
-          {property: 'defaultProps'},
-          {property: 'propTypes'}
-        ]
-      }
-    ],
-    */
-
     'import/extensions': [
       'error',
       'ignorePackages',
