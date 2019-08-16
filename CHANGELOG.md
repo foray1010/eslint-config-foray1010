@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.3...v8.0.0) (2019-08-16)
+
+### ⚠ BREAKING CHANGES
+
+- require eslint ^6 & remove babel-node, react preset
+- **deps:** require node >=8.9
+
+### Bug Fixes
+
+- only run eslint-plugin-html on frontend preset ([08e771f](https://github.com/foray1010/eslint-config-foray1010/commit/08e771f))
+
+### Features
+
+- **deps:** update dependency eslint-config-airbnb to v18 ([#177](https://github.com/foray1010/eslint-config-foray1010/issues/177)) ([d79b3b4](https://github.com/foray1010/eslint-config-foray1010/commit/d79b3b4))
+- add typescript-react preset ([b6c05aa](https://github.com/foray1010/eslint-config-foray1010/commit/b6c05aa))
+- support eslint v6 ([b12f28a](https://github.com/foray1010/eslint-config-foray1010/commit/b12f28a))
+
 ### [7.3.3](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.2...v7.3.3) (2019-08-16)
 
 ### Bug Fixes
