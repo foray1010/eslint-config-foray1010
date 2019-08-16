@@ -14,7 +14,13 @@ module.exports = {
     // not running directly by that engine but transpile to compatible syntax
     'node/no-unsupported-features/es-syntax': 'off',
 
-    '@typescript-eslint/array-type': ['error', 'generic'],
+    '@typescript-eslint/array-type': [
+      'error',
+      {
+        default: 'generic'
+      }
+    ],
+    '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/camelcase': ['error', {properties: 'never'}],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/indent': ['error', 2],

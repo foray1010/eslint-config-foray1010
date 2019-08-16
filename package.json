@@ -21,16 +21,16 @@
     "ignore-sync": "ignore-sync",
     "lint": "eslint .",
     "test": "npm-run-all -s test:*",
-    "test:Popup-my-Bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks",
     "test:didyoumean2": "./scripts/test_repo.sh didyoumean2",
+    "test:popup-my-bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks",
     "test:use-typed-event-listener": "./scripts/test_repo.sh use-typed-event-listener"
   },
   "peerDependencies": {
     "eslint": "^5.3.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "app-root-path": "^2.2.1",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb": "17.1.1",
