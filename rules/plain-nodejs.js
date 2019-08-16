@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     // backend code needs more dynamic structure
     'global-require': 'off',
+    strict: ['error', 'global'],
 
     // avoid throw error even for `private: true` app which doesn't suppose to publish
     'node/no-unpublished-require': 'off'

@@ -2,7 +2,7 @@
   "name": "eslint-config-foray1010",
   "version": "7.3.3",
   "engines": {
-    "node": ">=6.9"
+    "node": ">=8.9"
   },
   "description": "my own ESLint config",
   "keywords": [
@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "^2.0.0",
     "app-root-path": "^2.2.1",
     "babel-eslint": "^10.0.1",
-    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-airbnb": "18.0.1",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-flowtype": "^4.0.0",
     "eslint-plugin-fp": "^2.3.0",

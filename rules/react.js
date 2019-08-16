@@ -36,6 +36,9 @@ module.exports = {
       }
     ],
 
+    // useful for HOC
+    'react/jsx-props-no-spreading': 'off',
+
     // will deprecate in react 16.3
     'react/no-did-mount-set-state': 'off',
     'react/no-did-update-set-state': 'off',
