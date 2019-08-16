@@ -1,7 +1,6 @@
 'use strict'
 
 module.exports = {
-  plugins: ['eslint-plugin-html'],
   settings: {
     'import/resolver': {
       node: {
