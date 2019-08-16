@@ -21,8 +21,8 @@
     "ignore-sync": "ignore-sync",
     "lint": "eslint .",
     "test": "npm-run-all -s test:*",
-    "test:Popup-my-Bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks",
     "test:didyoumean2": "./scripts/test_repo.sh didyoumean2",
+    "test:popup-my-bookmarks": "./scripts/test_repo.sh Popup-my-Bookmarks",
     "test:use-typed-event-listener": "./scripts/test_repo.sh use-typed-event-listener"
   },
   "peerDependencies": {
