@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.3.3](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.2...v7.3.3) (2019-08-16)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-flowtype to v4 ([#176](https://github.com/foray1010/eslint-config-foray1010/issues/176)) ([20c918b](https://github.com/foray1010/eslint-config-foray1010/commit/20c918b))
+- **deps:** update dependency eslint-plugin-node to v9 ([#129](https://github.com/foray1010/eslint-config-foray1010/issues/129)) ([fca7c43](https://github.com/foray1010/eslint-config-foray1010/commit/fca7c43))
+- **deps:** update typescript-eslint monorepo to v2 (major) ([#179](https://github.com/foray1010/eslint-config-foray1010/issues/179)) ([7532c46](https://github.com/foray1010/eslint-config-foray1010/commit/7532c46))
+
 ### [7.3.2](https://github.com/foray1010/eslint-config-foray1010/compare/v7.3.1...v7.3.2) (2019-07-11)
 
 ### Bug Fixes
