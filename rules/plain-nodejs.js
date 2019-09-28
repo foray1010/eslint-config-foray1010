@@ -12,7 +12,10 @@ module.exports = {
     'global-require': 'off',
     strict: ['error', 'global'],
 
+    // handled by eslint-plugin-import
+    'node/no-missing-import': 'off',
     // avoid throw error even for `private: true` app which doesn't suppose to publish
+    'node/no-unpublished-import': 'off',
     'node/no-unpublished-require': 'off'
   }
 }
