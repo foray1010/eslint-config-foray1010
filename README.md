@@ -6,6 +6,10 @@
 [![npm](https://img.shields.io/npm/dm/eslint-config-foray1010.svg)](https://www.npmjs.com/package/eslint-config-foray1010)
 [![npm](https://img.shields.io/npm/l/eslint-config-foray1010.svg)](https://www.npmjs.com/package/eslint-config-foray1010)
 
+## Deprecated
+
+_This repository is deprecated in favor of [@foray1010/eslint-config](https://github.com/foray1010/common-presets/tree/master/packages/eslint-config)_
+
 ## Versioning
 
 ### X.Y.Z
